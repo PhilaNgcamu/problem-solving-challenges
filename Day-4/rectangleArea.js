@@ -12,6 +12,6 @@ function rectangleArea(strArr) {
   let x4 = Number(integers[6]);
   let y4 = Number(integers[7]);
 
-  return (y4 - y2) * (x2 - x1);
+  return Math.abs((y4 - y2) * (x2 - x1));
 }
-console.log(rectangleArea(["(0 0)", "(3 0)", "(0 2)", "(3 2)"]));
+console.log(rectangleArea(["(-2 -2)", "(0 0)", "(-2 0)", "(0 -2)"]));
