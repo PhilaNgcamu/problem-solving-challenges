@@ -4,14 +4,14 @@ function rectangleArea(strArr) {
   let integers = strArr.join("").match(/[0-9]/g);
 
   let x1 = Number(integers[0]);
-  let y1 = integers[1];
-  let x2 = integers[2];
-  let y2 = integers[3];
-  let x3 = integers[4];
-  let y3 = integers[5];
-  let x4 = integers[6];
-  let y4 = integers[7];
+  let y1 = Number(integers[1]);
+  let x2 = Number(integers[2]);
+  let y2 = Number(integers[3]);
+  let x3 = Number(integers[4]);
+  let y3 = Number(integers[5]);
+  let x4 = Number(integers[6]);
+  let y4 = Number(integers[7]);
 
-  return integers;
+  return (y4 - y2) * (x2 - x1);
 }
 console.log(rectangleArea(["(0 0)", "(3 0)", "(0 2)", "(3 2)"]));
