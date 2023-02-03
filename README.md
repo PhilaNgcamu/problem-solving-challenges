@@ -1,2 +1,3 @@
 # problem-solving-challenges
-Currently upskilling on problem-solving (and on hackerrank)
+
+Currently upskilling on problem-solving (on these platforms: hackerrank and hackerearth
