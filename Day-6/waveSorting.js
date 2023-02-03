@@ -7,14 +7,19 @@ function WaveSorting(arr) {
   let array = [];
   let result = [];
   for (let i = 0; i < 3; i++) {
-    array[i] = array2.splice(array2.indexOf(Math.max(...array2)), 1)[0];
+    array.push(array2.splice(array2.indexOf(Math.max(...array2)), 1)[0]);
   }
-  for (let i = 0; i < 3; i++) {
-    result[i] = array[i];
-    result[i + 1] = array2[i];
+  array.sort((a, b) => a - b);
+  for (let i = 0; i < arr.length; i++) {
+    result.push(array[i]);
+    result.push(array2[i]);
   }
-  return result;
+  console.log(result.filter((number) => number !== undefined));
+  for (let i = 1; i < result.length - 1; i += 2) {
+    if (result[i] > result[i - 1]) return "false";
+  }
+
+  return "true";
 }
 
-console.log(WaveSorting([0, 1, 2, 4, 1, 4]));
-//[2, 0, 4, 1, 4, 1]
+console.log(WaveSorting([0, 1, 2, 4, 1, 1, 1]));
