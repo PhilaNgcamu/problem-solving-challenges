@@ -1,4 +1,4 @@
-# problem-solving-challenges
+<h1>Problem Solving Challenges</h1>
 
 Currently upskilling on problem-solving (on these platforms: hackerrank and hackerearth.
 
