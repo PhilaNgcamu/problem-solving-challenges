@@ -15,4 +15,4 @@ function NonrepeatingCharacter(str) {
   }
 }
 
-console.log(NonrepeatingCharacter("agettkgaeee"));
+console.log(NonrepeatingCharacter("hello world hi hey"));
