@@ -10,7 +10,6 @@ const array = [
   ["B", "G", "B", "B", "G", "B"],
   ["B", "G", "B", "B", "G", "B"],
 ];
-
 //valid pluses
 console.log(array[0][1]); //1
 console.log(array[1][0]); //1
