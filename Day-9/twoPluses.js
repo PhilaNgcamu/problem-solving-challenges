@@ -10,5 +10,3 @@ const array = [
   ["BGBBGB"],
   ["BGBBGB"],
 ];
-
-console.log();
