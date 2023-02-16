@@ -12,18 +12,6 @@ const array = [
 ];
 
 //valid pluses
-
-console.log(array[3][0]);
-console.log(array[3][1]);
-console.log(array[3][2]);
-console.log(array[3][3]);
-console.log(array[3][4]);
-console.log(array[3][5]);
-console.log(array[4][1]);
-console.log(array[4][4]);
-console.log(array[5][1]);
-console.log(array[5][4]);
-
 console.log(array[0][1]); //1
 console.log(array[1][0]); //1
 console.log(array[1][1]); //1
