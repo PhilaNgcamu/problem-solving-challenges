@@ -19,7 +19,7 @@ console.log(array[1][2]); //1
 console.log(array[2][1]); //1
 
 console.log(array[0][4]); //2
-console.log(array[1][3]); //2
+console.log(array[0 + 1][4 - 1]); //2
 console.log(array[1][4]); //2
 console.log(array[1][5]); //2
-console.log(array[2][4]); //2
+console.log(array[1 + 1][5 - 1]); //2
