@@ -8,4 +8,16 @@ let x = function bar() {
 
   return "World";
 };
-foo(x);
+//foo(x);
+
+const a = function movies() {
+  console.log("Harry Potter");
+};
+
+const b = function favourite(callback) {
+  console.log(`My favorite is ${callback}`);
+};
+
+let c = b(x);
+
+console.log(`c = ${c}`);
