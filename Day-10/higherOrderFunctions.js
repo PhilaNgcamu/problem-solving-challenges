@@ -16,9 +16,9 @@ const a = function movies() {
 };
 
 const b = (favourite = (callback) => {
-  console.log(`My favourite movie is ${callback()}`);
+  console.log(`My favourite movie is ${callback}`);
 });
 
-let c = b(foo(x));
+let c = b(foo(a));
 
 console.log(`c = ${c}`);
