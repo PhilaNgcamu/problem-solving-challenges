@@ -1,9 +1,14 @@
-const foo = (hello = (callback) => {
-  console.log("hello, " + callback());
+const foo = (hello = (callback, name1) => {
+  console.log("hello, " + callback(name1));
+});
+
+const a = (bar = (arg1) => {
+  console.log("Hello there, " + arg1);
+  return arg1;
 });
 
 try {
-  foo();
+  foo(a, "Phila");
 } catch (error) {
-  console.error("Hello, this is an error");
+  console.log("Hello, this is an error");
 }
