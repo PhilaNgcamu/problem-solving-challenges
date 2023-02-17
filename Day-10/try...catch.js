@@ -1,18 +1,34 @@
-const foo = (hello = (callback, name1) => {
-  console.log("hello, " + callback(name1));
-});
+// const foo = (hello = (callback, name1) => {
+//   console.log("hello, " + callback(name1));
+// });
 
-const a = (bar = (arg1) => {
-  console.log("Hello there, " + arg1);
-  return arg1;
+// const a = (bar = (arg1) => {
+//   console.log("Hello there, " + arg1);
+//   return arg1;
+// });
+
+// try {
+//   try {
+//     throw new Error("oops");
+//   } finally {
+//     console.log("Finally");
+//   }
+// } catch (error) {
+//   console.log("Hello, this is an error: " + error.message);
+// }
+
+const b = (func = (arg) => {
+  if (arg) console.log(arg);
+  else throw new Error("This is an error");
 });
 
 try {
+  b("This is a valid value");
   try {
-    throw new Error("oops");
+    b();
   } finally {
-    console.log("Finally");
+    console.log("Execution done!");
   }
 } catch (error) {
-  console.log("Hello, this is an error: " + error.message);
+  console.log(error.message);
 }
