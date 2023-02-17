@@ -10,8 +10,8 @@ let x = function bar() {
 };
 //foo(x);
 
-const a = function movies() {
-  console.log("Harry Potter");
+const a = function movies(callback) {
+  console.log("Harry Potter " + callback);
   return "Harry Potter";
 };
 
@@ -19,6 +19,6 @@ const b = (favourite = (callback) => {
   console.log(`My favourite movie is ${callback}`);
 });
 
-let c = b(foo(a));
+let c = b(foo(x));
 
 console.log(`c = ${c}`);
