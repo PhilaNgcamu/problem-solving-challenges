@@ -18,17 +18,25 @@
 // }
 
 const b = (func = (arg) => {
-  if (arg) console.log(arg);
+  if (arg) return arg;
   else throw new Error("This is an error");
 });
 
 try {
-  b("This is a valid value");
-  try {
-    b();
-  } finally {
-    console.log("Execution done!");
-  }
+  (() => {
+    try {
+      console.log(b("This is a valid value"));
+      try {
+        b();
+      } finally {
+        console.log("Execution done!");
+      }
+    } catch (error) {
+      console.log(error.message);
+    } finally {
+      console.log("Execution done!");
+    }
+  })();
 } catch (error) {
-  console.log(error.message);
+  console.log(error);
 }
