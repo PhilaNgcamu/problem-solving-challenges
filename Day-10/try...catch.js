@@ -8,7 +8,11 @@ const a = (bar = (arg1) => {
 });
 
 try {
-  foo(a, "Phila");
+  try {
+    throw new Error("oops");
+  } finally {
+    console.log("Finally");
+  }
 } catch (error) {
-  console.log("Hello, this is an error");
+  console.log("Hello, this is an error: " + error.message);
 }
