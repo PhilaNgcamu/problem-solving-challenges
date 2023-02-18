@@ -4,10 +4,13 @@ function birthday(s, d, m) {
   // sum of the integers in the array(squares) = Ron's birth day (d) segment
   let count = 0;
   let sub = s;
+  let array;
+  if (s.length === 1 && s[0] === d) return 1;
   for (let j = 0; j < s.length; j++) {
-    sub = sub.slice(j, m + j);
-    if (sub.reduce((a, b) => a + b, 0) === d) count++;
-    sub = [];
+    array = sub.slice(j, m + j);
+    if (array.reduce((a, b) => a + b, 0) === d) {
+      count++;
+    }
   }
   return count;
 }
