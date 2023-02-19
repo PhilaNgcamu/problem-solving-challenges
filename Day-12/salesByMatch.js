@@ -9,7 +9,10 @@ function sockMerchant(ar, n) {
       socks[ar[i]]++;
     } else socks[ar[i]] = 1;
   }
-  return socks;
+  for (let pairs in socks) {
+    count += Math.floor(socks[pairs] / 2);
+  }
+  return count;
 }
 
 console.log(sockMerchant([10, 20, 20, 10, 10, 30, 50, 10, 20], 9));
