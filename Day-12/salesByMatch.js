@@ -5,10 +5,13 @@ function sockMerchant(ar, n) {
   let array = [...ar];
   for (let i = 0; i < n; i++) {
     let socks = [];
+    let sock = array[i];
+    socks.push(sock);
+
     for (let j = 0; j < n; j++) {
       if (j === i) continue;
-      else if (ar[i] === ar[j]) {
-        socks.push(ar[i]);
+      else if (sock === array[j]) {
+        socks.push(sock);
         array.splice(i, 1);
       }
     }
