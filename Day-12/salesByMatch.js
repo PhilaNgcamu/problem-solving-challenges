@@ -1,3 +1,5 @@
+//Hackerrank > Sales By Match
+
 function sockMerchant(ar, n) {
   // arr[i] = color of each sock
   let count = 0;
