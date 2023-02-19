@@ -11,12 +11,14 @@ function dayOfProgrammer(year) {
   let difference;
   let month;
   let output;
-  if (year % 400 === 0 && y % 4 === 0 && y % 100 !== 0) {
+  if (year % 4 === 0) {
     difference = dayOfTheProgrammer - leapYearDays;
-    month = Math.floor(dayOfTheProgrammer / 30) + 1;
+    month += Math.floor(dayOfTheProgrammer / 30) + 1;
   } else {
     difference = dayOfTheProgrammer - otherYears;
     month = Math.floor(dayOfTheProgrammer / 30) + 1;
   }
-  return (output = difference + "." + month + "." + year);
+  return (output = difference + "." + "0" + month + "." + year);
 }
+
+console.log(dayOfProgrammer(2016));
