@@ -9,6 +9,7 @@ function sockMerchant(ar, n) {
       socks[ar[i]]++;
     } else socks[ar[i]] = 1;
   }
+  //Count How many pairs
   for (let pairs in socks) {
     count += Math.floor(socks[pairs] / 2);
   }
