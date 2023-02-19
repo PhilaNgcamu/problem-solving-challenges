@@ -9,16 +9,22 @@ function dayOfProgrammer(year) {
   let otherYears = 243;
   let dayOfTheProgrammer = 256;
   let difference;
-  let month;
+  let month = "0";
   let output;
-  if (year % 4 === 0) {
+  if (year < 1919 && year % 4 === 0) {
+    difference = dayOfTheProgrammer - leapYearDays;
+    month += Math.floor(dayOfTheProgrammer / 30) + 1;
+  } else if (year < 1919) {
+    difference = dayOfTheProgrammer - leapYearDays;
+    month += Math.floor(dayOfTheProgrammer / 30) + 1;
+  } else if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
     difference = dayOfTheProgrammer - leapYearDays;
     month += Math.floor(dayOfTheProgrammer / 30) + 1;
   } else {
     difference = dayOfTheProgrammer - otherYears;
-    month = Math.floor(dayOfTheProgrammer / 30) + 1;
+    month += Math.floor(dayOfTheProgrammer / 30) + 1;
   }
-  return (output = difference + "." + "0" + month + "." + year);
+  return (output = difference + "." + month + "." + year);
 }
 
-console.log(dayOfProgrammer(2016));
+console.log(dayOfProgrammer(1800));
