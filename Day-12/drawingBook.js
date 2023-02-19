@@ -6,6 +6,8 @@ function pageCount(n, p) {
   let countFront = 0;
   let countBack = 0;
 
+  if (n - p === 1 || n - p === n - 1) return 0;
+
   // use a for loop to count to a page
   for (let i = 1; i <= n; i++) {
     // -- if a page === i then Math.floor(i/2)
@@ -13,13 +15,9 @@ function pageCount(n, p) {
       countFront += Math.floor(i / 2);
     }
   }
-  // use a for loop to count to a page
-  for (let i = 100; i <= 0; i--) {
-    // -- if a page === i then Math.floor(i/2)
-    if (p === i) {
-      countBack += Math.floor(i / 2);
-    }
-  }
-  if (countBack > countFront) return countBack;
-  return countFront;
+  countBack = Math.floor((n - p) / 2);
+  if (countBack >= countFront) return countFront;
+  return countBack;
 }
+
+console.log(pageCount(100, 92));
