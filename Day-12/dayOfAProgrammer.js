@@ -1,3 +1,5 @@
+//Hackerrank > Day Of Programmer
+
 function dayOfProgrammer(year) {
   // doap = 256th day of the year
   // from the years (1700-2700)
@@ -11,11 +13,12 @@ function dayOfProgrammer(year) {
   let difference;
   let month = "0";
   let output;
+  if (year === 1918) return "26.09.1918";
   if (year < 1919 && year % 4 === 0) {
     difference = dayOfTheProgrammer - leapYearDays;
     month += Math.floor(dayOfTheProgrammer / 30) + 1;
   } else if (year < 1919) {
-    difference = dayOfTheProgrammer - leapYearDays;
+    difference = dayOfTheProgrammer - otherYears;
     month += Math.floor(dayOfTheProgrammer / 30) + 1;
   } else if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
     difference = dayOfTheProgrammer - leapYearDays;
@@ -26,5 +29,3 @@ function dayOfProgrammer(year) {
   }
   return (output = difference + "." + month + "." + year);
 }
-
-console.log(dayOfProgrammer(1800));
