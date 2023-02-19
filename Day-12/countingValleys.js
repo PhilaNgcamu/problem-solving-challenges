@@ -1,3 +1,4 @@
+// Hackerrank > Counting Valleys
 function countingValleys(steps, path) {
   let count = 0;
   let valley = 0;
