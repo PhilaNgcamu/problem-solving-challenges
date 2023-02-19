@@ -3,24 +3,19 @@ function sockMerchant(ar, n) {
   // compare each sock with another sock
   let count = 0;
   let array = [...ar];
-  for (let i = 0; i < n; i++) {
+
+  for (let i = 0; i < array.length - 1; i++) {
     let socks = [];
     let sock = array[i];
-    socks.push(sock);
-
-    for (let j = 0; j < n; j++) {
-      if (j === i) continue;
-      else if (sock === array[j]) {
+    for (let j = 0; j < array.length - 1; j++) {
+      if (sock === array[j]) {
         socks.push(sock);
-        array.splice(i, 1);
+        array.splice(j, 1);
       }
     }
+    count += Math.floor(socks.length / 2);
     console.log(socks);
-
-    count += Math.trunc(socks.length / 2);
   }
-
-  // return count
   return count;
 }
 
