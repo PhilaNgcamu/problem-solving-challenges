@@ -1,3 +1,5 @@
+// Hackerrank > bill dicision
+
 function bonAppetit(bill, k, b) {
   // bill = [portions, ....], k = bill[index] = cost of portion
   // calculate the bill of Anna, where we remove bill[k] from the array
