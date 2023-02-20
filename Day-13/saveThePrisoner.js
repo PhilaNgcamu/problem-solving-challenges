@@ -5,12 +5,11 @@ function saveThePrisoner(n, m, s) {
   let array = new Array(n).fill(1);
   let index = 0;
   for (let i = 0; i < m; i++) {
-    if (array[array.length - 1]) {
-      index = i;
+    if (array.indexOf(array[array.length - 1]) === i) {
+      array.fill(3, i);
     }
-    index = i;
   }
-  return array.indexOf(array[index]);
+  return array;
 }
 
 console.log(saveThePrisoner(4, 6, 2));
