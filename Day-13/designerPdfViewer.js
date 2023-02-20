@@ -1,13 +1,15 @@
 // Hackerrank > Designer PDF Viewer
 function designerPdfViewer(h, word) {
   // find the postion of the letter and reference it on the word[position of letter]
-  //multple each letter according their given numbers
-  //return the area
-  let area = 1;
+  //find the max height of the character
+  //return the area = maxHeight * word length
+  let maxHeight = 0;
+
   for (let i = 0; i < word.length; i++) {
-    area *= h[word[i].charCodeAt(0) - 97];
+    let letterHeight = h[word[i].charCodeAt(0) - 97];
+    if (letterHeight > maxHeight) maxHeight = letterHeight;
   }
-  return area;
+  return maxHeight * word.length;
 }
 
 console.log(
