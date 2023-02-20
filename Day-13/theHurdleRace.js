@@ -1,3 +1,4 @@
+// Hackerrank > The Hurdle Race
 function hurdleRace(k, height) {
   // determine the highest hurdle, if highest > k then return highest - k
   // else return 0
