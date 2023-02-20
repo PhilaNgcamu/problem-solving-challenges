@@ -1,3 +1,9 @@
 function hurdleRace(k, height) {
-  // Write your code here
+  // determine the highest hurdle, if highest > k then return highest - k
+  // else return 0
+  let max = Math.max(...height);
+  if (max > k) return max - k;
+  return 0;
 }
+
+console.log(hurdleRace(5, [1, 6, 3, 5, 2]));
