@@ -1,14 +1,18 @@
 function circularArrayRotation(a, k, queries) {
   // k == number of rotations
   // make a new array of a.length
-  let array = Array(a.length);
-  for (let i = 0; i < k; i++) {
-    array[k - i] = a[a.length - 1 - i];
+  let array = [];
+  for (let i = 0; i < a.length; i++) {
+    if (i === 0) {
+      array[k] = a[1];
+    } else array[i] = a[k - 2];
   }
-  array[k] = a[a.length - 3];
-  array[k - 1] = a[a.length - 1];
-  array[k - 2] = a[a.length - 2];
+  // k == 2
+  array[0] = a[1];
+  array[1] = a[2];
+  array[2] = a[0];
 
+  // [4,5,3]
   return array;
 }
 console.log(circularArrayRotation([3, 4, 5], 2, [1, 2]));
