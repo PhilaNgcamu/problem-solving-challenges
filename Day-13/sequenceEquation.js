@@ -7,7 +7,6 @@ function permutationEquation(p) {
     //p[p[y]]
   }
   let output = [];
-  console.log(p);
   for (let i of array) {
     output.push(p.indexOf(i) + 1);
   }
