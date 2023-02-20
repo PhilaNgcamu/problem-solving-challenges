@@ -4,3 +4,5 @@ function saveThePrisoner(n, m, s) {
   // use the number of candies (m) to loop around prisoners
   for (let i = 0; i < m; i++) {}
 }
+
+console.log(saveThePrisoner(4, 6, 2));
