@@ -1,12 +1,13 @@
 function circularArrayRotation(a, k, queries) {
   // k == number of rotations
-  // locate to the index to start at by n - k = a[index]
-  //then add i in n - k to move to the next element then push it
-  // use modulo to the start of the array again
+  // pop first and unshift k times
+  // then return the queries
+  for (let i = 0; i < k; i++) {
+    a.unshift(a.pop());
+  }
   let array = [];
-
-  for (let i = 0; i < queries.length; i++) {
-    array.push(a[(queries.length - k + i) % queries.length]);
+  for (let i of queries) {
+    array.push(a[i]);
   }
   return array;
 }
