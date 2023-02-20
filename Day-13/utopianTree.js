@@ -1,3 +1,4 @@
+// Hackerrank > Utopian Tree
 function utopianTree(n) {
   // use a for loop where i % 2 === 0 === "spring" else "summer"
   // if spring, maxHeight * 2 else maxHeight + 1
