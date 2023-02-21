@@ -7,18 +7,20 @@ function jumpingOnClouds(c, k) {
   // if thundercloud then c[i] = 1 and e === 100 - 2
   // game ends when character lands back on cloud 0 at the start
   // return the energy remaining, e
-  let e = 100;
-  let jumps;
 
-  for (let i = 0; i < c.length; i++) {
-    if (c[i] === 1) {
-      jumps = c[(i + k) % c.length];
-      e = e - 1 - 2;
+  let e = 100;
+  let position = 0;
+  let i = 0;
+  while (i === 0 || position !== 0) {
+    position = (position + k) % c.length;
+    if (c[position] === 1) {
+      e = e - 2;
     } else {
-      jumps = c[(i + k) % c.length];
       e = e - 1;
     }
+    i++;
   }
+  return e;
 }
 
 console.log(jumpingOnClouds([0, 0, 1, 0], 2));
