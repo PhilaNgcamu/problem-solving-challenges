@@ -1,7 +1,7 @@
 function appendAndDelete(s, t, k) {
-  s.slice(-Math.ceil(k / 2));
+  let word = s.slice(0, s.indexOf(s.slice(-Math.ceil(k / 2))));
   k = k - Math.ceil(k / 2);
-  t.slice(-k);
-  return s.slice(0, 6) + t.slice(-k);
+  let second = t.slice(-k);
+  return t === word + second ? "Yes" : "No";
 }
 console.log(appendAndDelete("hackerhappy", "hackerrank", 9));
