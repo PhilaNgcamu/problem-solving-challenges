@@ -11,10 +11,11 @@ function jumpingOnClouds(c, k) {
   let e = 100;
   let position = 0;
   let i = 0;
+  //Start at cloud a certain cloud postion and end at index 0 of the cloud
   while (i === 0 || position !== 0) {
     position = (position + k) % c.length;
     if (c[position] === 1) {
-      e = e - 2;
+      e = e - 1 - 2;
     } else {
       e = e - 1;
     }
