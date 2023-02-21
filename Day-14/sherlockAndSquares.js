@@ -2,7 +2,7 @@
 function squares(a, b) {
   //Use the square range equation, where sqrt of upper range - sqrt of upper range + 1 === number of sqrtes left
   let squareA = Math.ceil(Math.sqrt(a));
-  let squareB = Math.ceil(Math.sqrt(b));
+  let squareB = Math.floor(Math.sqrt(b));
 
   return squareB - squareA + 1;
 }
