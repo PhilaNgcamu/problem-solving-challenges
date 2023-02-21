@@ -1,11 +1,9 @@
 // Hackerrank > Sherlock and Squares
 function squares(a, b) {
-  let count = 0;
-  let square;
-  for (let i = 1; i <= b; i++) {
-    square = i * i;
-    if (square >= a && square <= b) count++;
-  }
-  return count;
+  //Use the square range equation, where sqrt of upper range - sqrt of upper range + 1 === number of sqrtes left
+  let squareA = Math.ceil(Math.sqrt(a));
+  let squareB = Math.ceil(Math.sqrt(b));
+
+  return squareB - squareA + 1;
 }
 console.log(squares(24, 49));
