@@ -1,4 +1,4 @@
 function appendAndDelete(s, t, k) {
   return k;
 }
-console.log(appendAndDelete(["a", "b", "c"], ["d", "e", "f"], 6));
+console.log(appendAndDelete("hackerhappy", "hackerrank", 9));
