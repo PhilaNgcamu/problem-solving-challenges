@@ -1,26 +1,26 @@
 function cutTheSticks(arr) {
-  // Write your code here
-  const RESULT = [arr.length];
+  let array = [...arr];
+  //the output should have the length of the sticks cut by the smallest stick size
+  const output = [array.length];
 
-  while (arr.length > 0) {
-    const SMALLEST_STICK = Math.min(...arr);
+  while (array.length > 0) {
+    let smallestStick = Math.min(...array);
     let remainingSticks = [];
-
-    for (const stick of arr) {
-      const SIZE = stick - SMALLEST_STICK;
-
-      if (SIZE > 0) {
-        remainingSticks.push(SIZE);
+    for (const stickSize of array) {
+      //determine the new size of the stick
+      let size = stickSize - smallestStick;
+      if (size > 0) {
+        remainingSticks.push(size);
       }
     }
-
-    arr = remainingSticks;
-
-    if (arr.length > 0) {
-      RESULT.push(arr.length);
+    //remaining sticks as the new array
+    array = remainingSticks;
+    //length of the ramining sticks array
+    if (array.length > 0) {
+      output.push(array.length);
     }
   }
 
-  return RESULT;
+  return output;
 }
 console.log(cutTheSticks([1, 2, 3]));
