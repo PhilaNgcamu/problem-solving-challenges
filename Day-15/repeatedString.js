@@ -1,9 +1,14 @@
 //Hackerrank > Repeated string
 function repeatedString(s, n) {
-  let str = "";
-  for (let i = 0; i < n; i++) {
-    str += s[i % s.length];
-  }
-  return 5 % s.length;
+  //determine the number of As
+  let a =
+    s.split("").filter((a) => a === "a").length * Math.floor(n / s.length);
+  //check for the remaining a's
+  let remainingStringLength = n % s.length;
+  // return the occurance of a
+  return (a += s
+    .slice(0, remainingStringLength)
+    .split("")
+    .filter((a) => a === "a").length);
 }
-console.log(repeatedString("abcac", 10));
+console.log(repeatedString("abcac", 13));
