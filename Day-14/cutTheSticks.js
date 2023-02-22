@@ -1,3 +1,4 @@
+// Hackerrank > Cut The Sticks
 function cutTheSticks(arr) {
   let array = [...arr];
   //the output should have the length of the sticks cut by the smallest stick size
