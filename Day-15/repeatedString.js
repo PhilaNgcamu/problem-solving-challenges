@@ -4,6 +4,6 @@ function repeatedString(s, n) {
   for (let i = 0; i < n; i++) {
     str += s[i % s.length];
   }
-  return str.match(/a/gi).length;
+  return 5 % s.length;
 }
-console.log(repeatedString("abcac", 100));
+console.log(repeatedString("abcac", 10));
