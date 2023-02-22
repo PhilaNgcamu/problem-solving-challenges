@@ -1,5 +1,9 @@
 //Hackerrank > Repeated string
 function repeatedString(s, n) {
-  return n;
+  let str = "";
+  for (let i = 0; i < n; i++) {
+    str += s[i % s.length];
+  }
+  return str.match(/a/gi).length;
 }
-console.log(repeatedString("abcac", 10));
+console.log(repeatedString("abcac", 100));
