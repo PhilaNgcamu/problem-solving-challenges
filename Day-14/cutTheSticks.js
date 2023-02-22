@@ -1,17 +1,26 @@
 function cutTheSticks(arr) {
-  // determine the shortest stick
-  let shortest = Math.min(...arr);
-  let max = Math.max(...arr);
+  // Write your code here
+  const RESULT = [arr.length];
 
-  //Declare out array
-  let a = new Array(arr.length).fill([]);
-  a[0] = arr;
-  for (let i = 0; i < max; i++) {
-    shortest = Math.min(...a[i]);
-    for (let j = 0; j < max; j++) {
-      a[i + 1].push(arr[j] - shortest);
+  while (arr.length > 0) {
+    const SMALLEST_STICK = Math.min(...arr);
+    let remainingSticks = [];
+
+    for (const stick of arr) {
+      const SIZE = stick - SMALLEST_STICK;
+
+      if (SIZE > 0) {
+        remainingSticks.push(SIZE);
+      }
     }
-    return a;
+
+    arr = remainingSticks;
+
+    if (arr.length > 0) {
+      RESULT.push(arr.length);
+    }
   }
+
+  return RESULT;
 }
 console.log(cutTheSticks([1, 2, 3]));
