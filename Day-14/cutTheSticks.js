@@ -20,7 +20,6 @@ function cutTheSticks(arr) {
       output.push(array.length);
     }
   }
-
   return output;
 }
 console.log(cutTheSticks([1, 2, 3]));
