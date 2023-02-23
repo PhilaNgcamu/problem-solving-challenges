@@ -1,10 +1,12 @@
-function countDown(n) {
-  let nextNumber = n;
+let countDown = function f(n) {
+  let nextNumber = n - 1;
   if (nextNumber === 1) {
     console.log(nextNumber);
   } else {
     console.log(nextNumber);
-    countDown(nextNumber - 1);
+    countDown(nextNumber);
   }
-}
-countDown(3);
+};
+let newYearCountDown = countDown;
+countDown = null;
+newYearCountDown(10);
