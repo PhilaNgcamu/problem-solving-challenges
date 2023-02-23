@@ -1,4 +1,4 @@
-<h1>JavaScript Recursive Function</h1>
+<h1>JavaScript Recursion</h1>
 
 - A **recursive** function is a function that calles itself until it doens't. Reference: [recursion.js](recursion.js).
 
@@ -6,4 +6,4 @@
 
 - Why use recursive functions? We generally want to break a big problem into smaller ones. Mostly, you will find them in data structures like binary trees and grapsh and algorithms such as binary search and quick sort
 
-- The examples are in [recursion.js](recursion.js)
+- The examples are in [recursion.js](recursion.js).
