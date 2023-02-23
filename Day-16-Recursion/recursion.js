@@ -69,20 +69,32 @@ const company = {
 };
 
 //The first memory should except the first initial variable in sumSalaries(), company
-function sumSalaries(department) {
-  //if the department == an array then add all salaries of that department
-  if (Array.isArray(department)) {
-    return department.reduce((acc, curr) => acc + curr.salary, 0);
-  } else {
-    //traverse through the array for departments(array)
-    //let sum = 0;
-    let sum = 0;
-    for (const subdep of Object.values(department)) {
-      //the subcall should except the sub department(array)
-      sum += sumSalaries(subdep);
-    }
-    return sum;
-  }
-}
+// function sumSalaries(department) {
+//   //if the department == an array then add all salaries of that department
+//   if (Array.isArray(department)) {
+//     return department.reduce((acc, curr) => acc + curr.salary, 0);
+//   } else {
+//     //traverse through the array for departments(array)
+//     //let sum = 0;
+//     let sum = 0;
+//     for (const subdep of Object.values(department)) {
+//       //the subcall should except the sub department(array)
+//       sum += sumSalaries(subdep);
+//     }
+//     return sum;
+//   }
+// }
 
-console.log(sumSalaries(company));
+// console.log(sumSalaries(company));
+
+// sum = 1 + 2 + ... + n
+// write the funtion productTo(n)
+function sumTo(n) {
+  // let sum = n
+  let sum = n;
+  // if n === 1 then return sum
+  if (n === 1) return sum;
+  //else sum + sumTo(n - 1)
+  else return sum * sumTo(n - 1);
+}
+console.log(sumTo(10));
