@@ -129,3 +129,18 @@ const company = {
 //   countDownRecursive(n - 1);
 // }
 // countDownRecursive(3);
+function sumRange(n) {
+  let total = 0;
+  for (let i = n; i > 0; i--) {
+    total += i;
+  }
+  return total;
+}
+
+function sumRangeRecursive(n, total = 0) {
+  if (n <= 0) return total;
+  else {
+    return sumRange(n - 1, total + n);
+  }
+}
+console.log(sumRangeRecursive(5, 0));
