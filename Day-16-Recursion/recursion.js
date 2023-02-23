@@ -21,3 +21,14 @@
 
 // let s = sum;
 // console.log(s(10));
+
+// find the answer of given X raised to the power N using recursion. X = 5 and N = 3
+// 5 * 5 * 5 === 125
+function power(X, N) {
+  let pow = X;
+  if (N === 1) return pow;
+  else {
+    return pow * power(pow, N - 1); // pow * (pow *( pow) N times
+  }
+}
+console.log(power(5, 3));
