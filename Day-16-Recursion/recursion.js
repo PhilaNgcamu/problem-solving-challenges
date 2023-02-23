@@ -95,6 +95,6 @@ function sumTo(n) {
   // if n === 1 then return sum
   if (n === 1) return sum;
   //else sum + sumTo(n - 1)
-  else return sum * sumTo(n - 1);
+  else return sum + sumTo(n - 1);
 }
 console.log(sumTo(10));
