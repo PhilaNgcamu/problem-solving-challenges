@@ -111,7 +111,21 @@ const company = {
 
 // write the function fib(3) where 3 is the nth Fibonacci number
 // fn = fn(nth - 1) + fn(nth - 2)
-function fib(n) {
-  if (n <= 1) return n;
-  return fib(n - 1) + fib(n - 2);
-}
+// function fib(n) {
+//   if (n <= 1) return n;
+//   return fib(n - 1) + fib(n - 2);
+// }
+// function countDown(n) {
+//   for (let i = n; i > 0; i--) {
+//     console.log(i);
+//   }
+// }
+// function countDownRecursive(n) {
+//   if (n <= 0) {
+//     console.log(`Hooray`);
+//     return n;
+//   }
+//   console.log(n);
+//   countDownRecursive(n - 1);
+// }
+// countDownRecursive(3);
