@@ -89,12 +89,22 @@ const company = {
 
 // sum = 1 + 2 + ... + n
 // write the funtion productTo(n)
-function sumTo(n) {
-  // let sum = n
-  let sum = n;
-  // if n === 1 then return sum
-  if (n === 1) return sum;
-  //else sum + sumTo(n - 1)
-  else return sum + sumTo(n - 1);
-}
-console.log(sumTo(10));
+// function sumTo(n) {
+//   // let sum = n
+//   let sum = n;
+//   // if n === 1 then return sum
+//   if (n === 1) return sum;
+//   //else sum + sumTo(n - 1)
+//   else return sum + sumTo(n - 1);
+// }
+// console.log(sumTo(10));
+//write the function factorial(n)
+// function factorial(n) {
+//   //let product = 0;
+//   let product = n;
+//   // if n >= 1 then return n
+//   if (product === 0) return 1;
+//   else return product * factorial(product - 1);
+//   //else n * n - 1
+// }
+// console.log(factorial(10));
