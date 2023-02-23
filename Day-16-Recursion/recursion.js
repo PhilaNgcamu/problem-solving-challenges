@@ -129,18 +129,54 @@ const company = {
 //   countDownRecursive(n - 1);
 // }
 // countDownRecursive(3);
-function sumRange(n) {
-  let total = 0;
-  for (let i = n; i > 0; i--) {
-    total += i;
+// function sumRange(n) {
+//   let total = 0;
+//   for (let i = n; i > 0; i--) {
+//     total += i;
+//   }
+//   return total;
+// }
+
+// function sumRangeRecursive(n, total = 0) {
+//   if (n <= 0) return total;
+//   else {
+//     return sumRange(n - 1, total + n);
+//   }
+// }
+// console.log(sumRangeRecursive(5, 0));
+
+//Given the family tree structure,
+const tree = {
+  name: "John",
+  children: [
+    {
+      name: "Jim",
+      children: [],
+    },
+    {
+      name: "Zoe",
+      children: [
+        {
+          name: "Kyle",
+          children: [],
+        },
+        {
+          name: "Sophia",
+          children: [],
+        },
+      ],
+    },
+  ],
+};
+//write the printAllChildren(t) - where tree is children
+function printAllChildren(t) {
+  if (t.children.length === 0) {
+    return;
   }
-  return total;
+  t.children.forEach((child) => {
+    console.log(child.name);
+    printAllChildren(child);
+  });
 }
 
-function sumRangeRecursive(n, total = 0) {
-  if (n <= 0) return total;
-  else {
-    return sumRange(n - 1, total + n);
-  }
-}
-console.log(sumRangeRecursive(5, 0));
+printAllChildren(tree);
