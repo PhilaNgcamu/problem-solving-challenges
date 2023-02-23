@@ -29,6 +29,7 @@ function power(X, N) {
   if (N === 1) return pow;
   else {
     return pow * power(pow, N - 1); // pow * (pow *( pow) N times
+    //X^N = X * X^N-1
   }
 }
 console.log(power(5, 3));
