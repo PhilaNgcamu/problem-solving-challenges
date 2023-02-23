@@ -108,3 +108,10 @@ const company = {
 //   //else n * n - 1
 // }
 // console.log(factorial(10));
+
+// write the function fib(3) where 3 is the nth Fibonacci number
+// fn = fn(nth - 1) + fn(nth - 2)
+function fib(n) {
+  if (n <= 1) return n;
+  return fib(n - 1) + fib(n - 2);
+}
