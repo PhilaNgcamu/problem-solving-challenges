@@ -4,9 +4,9 @@ function equalizeArray(arr) {
   // for loop to traverse the array
   for (let i = 0; i < arr.length; i++) {
     // if numbers has a arr[i] property then numbers[arr[i]]++
-    if (arr.hasOwnProperty(arr[i])) numbers[arr[i]]++;
+    if (numbers.hasOwnProperty(arr[i])) numbers[arr[i]]++;
     // else numbers[arr[i]] = 0
-    else numbers[arr[i]] = 0;
+    else numbers[arr[i]] = 1;
   }
   arr.sort((a, b) => a - b);
   let maxNum = 0;
@@ -18,6 +18,11 @@ function equalizeArray(arr) {
     }
   }
   return (
-    arr.length - arr.slice(arr.indexOf(number), arr.lastIndexOf(number) + 1)
+    arr.length -
+    arr.slice(
+      arr.indexOf(parseInt(number)),
+      arr.lastIndexOf(parseInt(number)) + 1
+    ).length
   );
 }
+console.log(equalizeArray([1, 2, 2, 3]));
