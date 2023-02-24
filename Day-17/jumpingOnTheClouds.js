@@ -4,13 +4,7 @@ function jumpingOnClouds(c) {
   // loop through the array
   for (let i = 0; i < c.length; i++) {
     //if the player is at cloud 1 then jump to the next the same counter
-    //0 0 1 0 0 1 0
-    if (c[i] === 0 && c[i + 1] === 1) {
-      i += 1;
-      counter++;
-    } else if (c[i] === 0 && c[i + 1] === 0) {
-      counter++;
-    }
+    if (i + 2 < c.length && c[i + 2] === 0) i += 1;
   }
   return counter;
 }
