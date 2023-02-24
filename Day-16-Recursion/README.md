@@ -1,3 +1,3 @@
 # problem-solving-challenges
 
-Solved 0 challenges this day.
+Learnt Recursion this day.
