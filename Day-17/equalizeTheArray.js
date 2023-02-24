@@ -1,17 +1,23 @@
-// Hackerrank > Equalize The Array
 function equalizeArray(arr) {
-  // let counter = 0;
-  let counter = 0;
-  // use 2 for loop to compare each number to another that is not exhausted
+  // let numbers = {}
+  let numbers = {};
+  // for loop to traverse the array
   for (let i = 0; i < arr.length; i++) {
-    //if the outer loop is in the last element break
-    if (i === arr.length - 1) break;
-    for (let j = i + 1; j < arr.length; j++) {
-      if (arr[i - 1] === arr[i]) break;
-      //if current number === any number counter ++
-      else if (arr[i] === arr[j]) counter++;
+    // if numbers has a arr[i] property then numbers[arr[i]]++
+    if (arr.hasOwnProperty(arr[i])) numbers[arr[i]]++;
+    // else numbers[arr[i]] = 0
+    else numbers[arr[i]] = 0;
+  }
+  arr.sort((a, b) => a - b);
+  let maxNum = 0;
+  let number;
+  for (const num in numbers) {
+    if (numbers[num] > maxNum) {
+      maxNum = numbers[num];
+      number = num;
     }
   }
-  //return counter
-  return counter;
+  return (
+    arr.length - arr.slice(arr.indexOf(number), arr.lastIndexOf(number) + 1)
+  );
 }
