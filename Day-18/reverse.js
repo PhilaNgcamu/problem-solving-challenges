@@ -12,4 +12,3 @@ function main(input) {
 console.log(
   main("2" + "\n" + "i.like.this.program.very.much" + "\n" + "pqr.mno")
 );
-("i.ekil.siht.margorp.yrev.hcum");
