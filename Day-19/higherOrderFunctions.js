@@ -41,8 +41,8 @@ const orders = [
   { amount: 325 },
 ];
 
-let totalAmount = 0;
-for (let i = 0; i < orders.length; i++) {
-  totalAmount += orders[i].amount;
-}
-console.log(totalAmount);
+// let totalAmount = 0;
+// for (let i = 0; i < orders.length; i++) {
+//   totalAmount += orders[i].amount;
+// }
+// console.log(totalAmount);
