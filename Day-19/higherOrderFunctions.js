@@ -46,3 +46,8 @@ const orders = [
 //   totalAmount += orders[i].amount;
 // }
 // console.log(totalAmount);
+
+const totalAmount = orders.reduce((sum, order) => {
+  return sum + order.amount;
+}, 0);
+console.log(totalAmount);
