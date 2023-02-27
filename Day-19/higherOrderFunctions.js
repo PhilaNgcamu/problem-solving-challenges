@@ -13,6 +13,10 @@ const animals = [
 //   if (animals[i].species === "dog") dogs.push(animals[i]);
 // }
 
-const dogs = animals.filter((animal) => animal.species === "dog");
+const isDog = function (animal) {
+  return animal.species === "dog";
+};
+
+const dogs = animals.filter(isDog);
 
 console.log(dogs);
