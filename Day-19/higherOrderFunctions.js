@@ -7,10 +7,12 @@ const animals = [
   { name: "Jimmy", species: "fish" },
 ];
 
-const dogs = [];
-for (let i = 0; i < animals.length; i++) {
-  //turn the if statement as filter condition in the .filter
-  if (animals[i].species === "dog") dogs.push(animals[i]);
-}
+//const dogs = [];
+// for (let i = 0; i < animals.length; i++) {
+//   //turn the if statement as filter condition in the .filter
+//   if (animals[i].species === "dog") dogs.push(animals[i]);
+// }
+
+const dogs = animals.filter((animal) => animal.species === "dog");
 
 console.log(dogs);
