@@ -32,3 +32,17 @@ const animals = [
 // const names = animals.map((animal) => animal.name);
 
 // console.log(names);
+
+//--Reduce
+const orders = [
+  { amount: 250 },
+  { amount: 400 },
+  { amount: 100 },
+  { amount: 325 },
+];
+
+let totalAmount = 0;
+for (let i = 0; i < orders.length; i++) {
+  totalAmount += orders[i].amount;
+}
+console.log(totalAmount);
