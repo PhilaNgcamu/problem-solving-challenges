@@ -22,9 +22,13 @@ const animals = [
 // console.log(dogs);
 
 //--Map
-const names = [];
-for (let i = 0; i < animals.length; i++) {
-  names.push(animals[i].name);
-}
+// const names = [];
+// for (let i = 0; i < animals.length; i++) {
+//   names.push(animals[i].name);
+// }
 
-console.log(names);
+// console.log(names);
+
+// const names = animals.map((animal) => animal.name);
+
+// console.log(names);
