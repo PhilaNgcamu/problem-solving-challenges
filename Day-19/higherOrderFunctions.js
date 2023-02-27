@@ -6,17 +6,25 @@ const animals = [
   { name: "Ursula", species: "cat" },
   { name: "Jimmy", species: "fish" },
 ];
-
+//--Filter()
 //const dogs = [];
 // for (let i = 0; i < animals.length; i++) {
 //   //turn the if statement as filter condition in the .filter
 //   if (animals[i].species === "dog") dogs.push(animals[i]);
 // }
 
-const isDog = function (animal) {
-  return animal.species === "dog";
-};
+// const isDog = function (animal) {
+//   return animal.species === "dog";
+// };
 
-const dogs = animals.filter(isDog);
+// const dogs = animals.filter(isDog);
 
-console.log(dogs);
+// console.log(dogs);
+
+//--Map
+const names = [];
+for (let i = 0; i < animals.length; i++) {
+  names.push(animals[i].name);
+}
+
+console.log(names);
