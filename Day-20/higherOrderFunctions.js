@@ -54,15 +54,15 @@
 //console.log(obj);
 
 //Sort This By Age using reduce:
-const people = [
-  { name: "Alice", age: 21 },
-  { name: "Max", age: 20 },
-  { name: "Jane", age: 20 },
-];
+// const people = [
+//   { name: "Alice", age: 21 },
+//   { name: "Max", age: 20 },
+//   { name: "Jane", age: 20 },
+// ];
 
-const sortedByAge = people.reduce((ages, eachAge) => {
-  let curr = ages[eachAge.age] ?? [];
-  return { ...ages, [eachAge.age]: [...curr, eachAge] };
-}, {});
+// const sortedByAge = people.reduce((ages, eachAge) => {
+//   let curr = ages[eachAge.age] ?? [];
+//   return { ...ages, [eachAge.age]: [...curr, eachAge] };
+// }, {});
 
-console.log(sortedByAge);
+// console.log(sortedByAge);
