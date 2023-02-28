@@ -29,16 +29,16 @@ const obj = customers.reduce((customerObj, currentValue) => {
 // console.log(sum);
 
 // Flatten the this array below using reduce:
-const twoDarray = [
-  [0, 1],
-  [2, 3],
-  [4, 5],
-];
-const flattened = twoDarray.reduce((array, eachArray) => {
-  array.push(...eachArray);
-  return array;
-}, []);
+// const twoDarray = [
+//   [0, 1],
+//   [2, 3],
+//   [4, 5],
+// ];
+// const flattened = twoDarray.reduce((array, eachArray) => {
+//   array.push(...eachArray);
+//   return array;
+// }, []);
 
-console.log(flattened);
+// console.log(flattened);
 
 //get the reduced(sum) value to the 3 x's in the array
