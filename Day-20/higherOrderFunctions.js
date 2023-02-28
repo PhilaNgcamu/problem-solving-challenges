@@ -39,4 +39,6 @@ const flattened = twoDarray.reduce((array, eachArray) => {
   return array;
 }, []);
 
+console.log(flattened);
+
 //get the reduced(sum) value to the 3 x's in the array
