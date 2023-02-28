@@ -42,4 +42,13 @@
 // console.log(flattened);
 
 // Count How many instances of values(names) are there by using reduce:
-const names = ["Alice", "Bob", "Tiff", "Bruce", "Alice"];
+// const names = ["Alice", "Bob", "Tiff", "Bruce", "Alice"];
+
+// const obj = names.reduce((allNames, eachName) => {
+//   console.log(allNames);
+//   return {
+//     ...allNames,
+//     [eachName]: (allNames[eachName] ?? 0) + 1,
+//   };
+// }, {});
+//console.log(obj);
