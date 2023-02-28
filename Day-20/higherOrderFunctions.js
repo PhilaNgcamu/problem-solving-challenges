@@ -23,7 +23,20 @@ const obj = customers.reduce((customerObj, currentValue) => {
 //   "John Doe": [{"item": .."price":.., "quantity":... }]
 // }
 
-const objects = [{ x: 1 }, { x: 2 }, { x: 3 }];
-const sum = objects.reduce((sum, obj) => sum + obj.x, 0);
-console.log(sum);
+// Find the sum of the values below using reduce:
+// const objects = [{ x: 1 }, { x: 2 }, { x: 3 }];
+// const sum = objects.reduce((sum, obj) => sum + obj.x, 0);
+// console.log(sum);
+
+// Flatten the this array below using reduce:
+const twoDarray = [
+  [0, 1],
+  [2, 3],
+  [4, 5],
+];
+const flattened = twoDarray.reduce((array, eachArray) => {
+  array.push(...eachArray);
+  return array;
+}, []);
+
 //get the reduced(sum) value to the 3 x's in the array
