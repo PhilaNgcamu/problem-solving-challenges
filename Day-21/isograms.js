@@ -5,5 +5,6 @@ function isIsogram(str) {
   //find the length of the set and remove duplicate letters if anny
   const result = new Set(str.toLowerCase());
   //return if the set === str length then true else false
-  return [...result].length === length;
+  return result.size === length;
 }
+console.log(isIsogram("Dermographic"));
