@@ -5,3 +5,5 @@ function squareSum(numbers) {
   //after the iteration, use reduce to find the sum of the squares
   return squares.reduce((a, b) => a + b, 0);
 }
+
+squareSum([0, 4, 6, 7, 8, 9]);
