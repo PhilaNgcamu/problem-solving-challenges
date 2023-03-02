@@ -1,3 +1,4 @@
+// Codewars > You only need one - Beginner
 function check(a, x) {
   return a.filter((element) => element === x).length ? true : false;
 }
