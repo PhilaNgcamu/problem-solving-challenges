@@ -1,3 +1,4 @@
+//Codewars > Count By X
 function countBy(x, n) {
   //store the multiples of x until the numbers == n
   let z = [];
