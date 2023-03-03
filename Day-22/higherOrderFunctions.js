@@ -1,5 +1,4 @@
 // const { companies, characters, ages, words1, words } = require("./dataObj");
-
 //  ***MAP***
 //  1. Get array of all names
 //  2. Get array of all heights
