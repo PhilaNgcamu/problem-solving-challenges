@@ -1,4 +1,5 @@
 // Codewars > Grasshopper Summation
 var summation = function (num) {
-  // Code here
+  if (num === 1) return num;
+  return num + summation(num - 1);
 };
