@@ -1,6 +1,5 @@
 // Codewars > Jaden Case
 String.prototype.toJadenCase = function () {
-  let result = "";
   //split into array
   let arr = this.split(" ");
   //map over the array and capitalize the first letter of each word
