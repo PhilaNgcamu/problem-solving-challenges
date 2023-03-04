@@ -1,3 +1,4 @@
+// Codewars > Mumbling
 function accum(s) {
   //split the string
   let arr = s.split("");
