@@ -1,3 +1,4 @@
+// Codewars > Detect Pangram
 function isPangram(string) {
   //Find the length of the string that has been splited withou any whitespace
   const array = string.split("").filter((letter) => letter !== " ");
