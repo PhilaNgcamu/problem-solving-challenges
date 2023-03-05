@@ -4,6 +4,6 @@ function isPangram(string) {
     .split("")
     .filter((letter) => /[a-z]/gi.test(letter))
     .join("");
-  return array.match(/[a-z]/gi).length === array.length;
+  return array;
 }
 console.log(isPangram("This is not a pangram."));
