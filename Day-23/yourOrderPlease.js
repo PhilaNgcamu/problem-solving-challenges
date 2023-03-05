@@ -5,9 +5,7 @@ function order(words) {
   const list = words.split(" ");
   const array = [];
   for (let i = 1; i <= list.length; i++) {
-    if (list.find((word) => word.includes(i)))
-      array[i] = list.find((word) => word.includes(i));
-    console.log(list.find((word) => word.includes(i)));
+    array[i] = list.find((word) => word.includes(i));
   }
   return array.filter(Boolean).join(" ");
 }
