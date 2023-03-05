@@ -1,9 +1,12 @@
 // Codewars > Detect Pangram
 function isPangram(string) {
-  const array = string
+  const str = string
     .split("")
     .filter((letter) => /[a-z]/gi.test(letter))
-    .join("");
-  return array;
+    .join("")
+    .toLowerCase();
+  return "abcdefghijklmnopqrstuvwxyz"
+    .split("")
+    .every((letter) => str.indexOf(letter) !== -1);
 }
-console.log(isPangram("This is not a pangram."));
+console.log(isPangram("The quick brown fox jumps over the lazy dog."));
