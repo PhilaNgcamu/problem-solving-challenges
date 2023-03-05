@@ -10,6 +10,7 @@ function digPow(n, p) {
   //add the numbers
   const sum = numbers.reduce((sum, num) => sum + num, 0);
   //return the added numbers divided by n
-  return n / sum;
+  if (sum % n) return -1;
+  return sum / n;
 }
 console.log(digPow(89, 1));
