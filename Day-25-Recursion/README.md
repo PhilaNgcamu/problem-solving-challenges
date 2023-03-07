@@ -18,3 +18,4 @@
   - Identify the flow of the functions - how they are getting in the memory stack.
   - Identify & focus on _left tree calls_ and _right tree calls_ by **using pen and paper**
   - Use a debugger to see the flow.
+- Identfy how then values are return in each step.
