@@ -15,5 +15,5 @@
 - Write the recurrence relation, if needed.
 - Draw the recursive tree.
 - About the tree:
-  - Identify the flow of the functions - how they are getting in the memory stack
-  - Identify & focus on _left tree calls_ and _right tree calls_
+  - Identify the flow of the functions - how they are getting in the memory stack.
+  - Identify & focus on _left tree calls_ and _right tree calls._
