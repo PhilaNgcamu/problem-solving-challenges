@@ -1,4 +1,4 @@
-//Lets print "Hello Word" 6 times.
+//Lets print "Hello Word" 5 times.
 function main() {
   message();
 }
@@ -24,10 +24,6 @@ function message3() {
 }
 
 function message4() {
-  console.log("Hello World");
-  message5();
-}
-function message5() {
   console.log("Hello World");
 }
 
