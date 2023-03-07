@@ -22,7 +22,7 @@
 
 <h2>Key focus on recursion</h2>
 
-- **3 data types** of variables:
+- **3 data types** of variables in a function:
   - Arguments
   - Return type values
   - Body of a function
