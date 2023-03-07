@@ -4,3 +4,4 @@
 
 - Practice, practice, practice!
 - See if the smaller version can be solved to figure out if a problem can be solved recursively.
+- Therefore, if it forms a pattern - it is called a recurrence relation, which helps us find the next term if we have the previous term.
