@@ -5,7 +5,7 @@
 - Practice, practice, practice!
 - See if the smaller version can be solved to figure out if a problem can be solved recursively.
 - Therefore, if it forms a pattern - it is called a recurrence relation (in some problems), which helps us find the next term if we have the previous term.
-- The base condition is when we know if the term is already equal to a knwn answer.
+- The base condition is when we know the term that is already equal to a known answer.
 
 <h2>Best approach for Recursion Problems</h2>
 
