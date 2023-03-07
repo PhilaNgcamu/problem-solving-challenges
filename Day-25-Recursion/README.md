@@ -19,3 +19,10 @@
   - Identify & focus on _left tree calls_ and _right tree calls_ by **using pen and paper**
   - Use a debugger to see the flow.
 - Identfy **how the values and their types are returned** in each step with the flow in mind. Ultimately, you'll have the solution of the first execution of the function.
+
+<h2>Key focus on recursion</h2>
+
+- **3 data types** of variables:
+  - Arguments
+  - Return type values
+  - Body of a function
