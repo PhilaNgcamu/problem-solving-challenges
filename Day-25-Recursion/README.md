@@ -9,11 +9,12 @@
 
 <h2>Best approach for Recursion Problems</h2>
 
-**_Important to understand any recursive problem_**
+**_Important to understand any recursive problem before doing code_**
 
 - Identify if you can break down the problem into smaller problems.
 - Write the recurrence relation, if needed.
 - Draw the recursive tree.
 - About the tree:
   - Identify the flow of the functions - how they are getting in the memory stack.
-  - Identify & focus on _left tree calls_ and _right tree calls._
+  - Identify & focus on _left tree calls_ and _right tree calls_ by **using pen and paper**
+  - Use a debugger to see the flow.
