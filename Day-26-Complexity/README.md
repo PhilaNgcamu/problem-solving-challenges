@@ -11,6 +11,8 @@
 
 - There are some algotithms that takes less time as the number of inputs increases than others. That means that are faster. Therefore, wer are interested in the speed of algorithms.
 
-- When you look at the Big Oh Notation graph, it will have the **Big Theta**: Fair rate speed, Big O: Fair rate speed or faster rate speed, Big Omega: Fair rate speed or slower rate speed, little O: faster rate speed and little Omega: slower rate speed. Reference: [Big Chart](https://www.bigocheatsheet.com/).
+- When you look at the Big Oh Notation graph, it will have the **Big Theta**: Fair rate speed, Big O: Fair rate speed or faster rate speed, Big Omega: Fair rate speed or slower rate speed, little O: faster rate speed and little Omega: slower rate speed. Reference: [Big O Chart](https://www.bigocheatsheet.com/).
+
+- Big O establishes a worst-case run time.
 
 - Example: Let's say we have 1000 inputs in the algorithms of **_n log n_** and **_n^4/3_**. Therefore, 1000 inputs in **_n log n_** is 3000 which is the time taken of the algorithm at that point and 1000 inputs in **_n^4/3_** is 10000 which is the time taken of the algorithm at that point. Therefore, O(**_n log n_**) is much faster than O(**_n^4/3_**)
