@@ -8,10 +8,15 @@ function duplicateEncode(word) {
   for (let i = 0; i < str.length; i++) {
     obj[str[i]] = (obj[str[i]] || 0) + 1;
   }
-  return obj;
-  // loop over the object.
-  // if the letter === 1 then add "'('" else "')'" in the string variable
+  // loop over the string.
+  for (let i = 0; i < str.length; i++) {
+    // if the letter === 1 then add "'('" else "')'" in the string variable
+    if (obj[word[i]] === 1) {
+      string += "(";
+    } else if (obj[word[i]] > 1) string += ")";
+  }
   // return the string
+  return string;
 }
 
 console.log(duplicateEncode("recede"));
