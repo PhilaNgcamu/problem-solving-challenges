@@ -1,3 +1,4 @@
+// Codewars > Duplicate Encoder
 function duplicateEncode(word) {
   // All the words should be in lower case, then split the word string
   let array = word.toLowerCase().split("");
