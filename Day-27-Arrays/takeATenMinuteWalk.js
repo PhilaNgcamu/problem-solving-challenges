@@ -1,6 +1,6 @@
 // Codewars > Take a Ten Minutes Walk
 function isValidWalk(walk) {
-  if (walk.length === 1 || walk.length !== 10) return false;
+  if (walk.length === 1 || walk.length !== 10 || !walk.length) return false;
   // declare the obj
   const obj = {};
   //loop over each letter
@@ -15,7 +15,9 @@ function isValidWalk(walk) {
   for (let i = 1; i < array.length; i++) {
     if (sum > 0) sum -= array[i];
     else if (sum < 0) sum += array[i];
+    else if (sum === 0) return true;
   }
+  console.log(sum);
   //return sum === 0
   return sum === 0;
 }
