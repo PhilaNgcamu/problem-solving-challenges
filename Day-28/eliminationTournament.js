@@ -18,7 +18,6 @@ const tourney = (array) => {
       }
     }
   }
-
   return output;
 };
 
