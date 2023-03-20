@@ -7,7 +7,7 @@ const tourney = (array) => {
   for (let i = 0; i < output.length; i++) {
     if (output.at(-1).length) break;
     //--if arr.length is odd then push last character to the next arr
-    if (output[0].length % 2 !== 0) output[1].push(output[0].at(-1));
+    else if (output[0].length % 2 !== 0) output[1].push(output[0].at(-1));
     for (let j = 0; j < output[i].length; j += 2) {
       //--if arr[i] > arr[i + 1] then push arr[i] output[index + 1] else push arr[i + 1]
       if (!output[i][j + 1]) break;
@@ -15,7 +15,6 @@ const tourney = (array) => {
         output[i + 1].push(output[i][j]);
       } else {
         output[i + 1].push(output[i][j + 1]);
-        console.log(output[i][j + 1]);
       }
     }
   }
