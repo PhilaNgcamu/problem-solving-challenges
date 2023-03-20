@@ -8,12 +8,13 @@ const tourney = (array) => {
   while (index < output.length) {
     for (let i = 0; i < output[index].length; i += 2) {
       //if array.length is odd then the last element should be first i  the second array
-      if (array.length % 2 !== 0 && !output[1].length && i === 0) {
+      if (array.length % 2 !== 0 && !output[1].length) {
         output[1].push(array.at(-1));
+        break;
       }
       //if the arr[i] > arr[i + 1] push arr[i] to output else push arr[i + 1]
-      //         else if (array[i] > array[i + 1]) output[i + 1].push(array[i]);
-      //         else output[i + 1].push(array[i + 1]);
+      //       else if (output[i] > array[i + 1]) output[i + 1].push(array[i]);
+      //       else output[i + 1].push(array[i + 1]);
     }
     index++;
   }
