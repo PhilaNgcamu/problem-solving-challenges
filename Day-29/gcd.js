@@ -3,4 +3,4 @@ function gcd(x, y) {
   if (!y) return x;
   return gcd(x, x % y);
 }
-console.log(gcd(12, 37));
+console.log(gcd(12, 36));
