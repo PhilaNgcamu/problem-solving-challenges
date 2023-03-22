@@ -1,8 +1,7 @@
-function fibonacci(num) {
-  if (num <= 1) return [0, 1];
-  const numbers = fibonacci(num - 1);
-  numbers.push(numbers[numbers.length - 1] + numbers[numbers.length - 2]);
-  return numbers;
+function fibonacci(num, array = [0, 1]) {
+  if (num <= 1) return array;
+  const [nextToLast, last] = array.slice(-2);
+  return fibonacci(num - 1, [...array, nextToLast + last]);
 }
 
-console.log(fibonacci(3));
+console.log(fibonacci(13));
