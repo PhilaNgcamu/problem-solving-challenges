@@ -103,5 +103,5 @@ linked.insertFirstNode(200);
 linked.insertFirstNode(300);
 linked.insertLastNode(400);
 linked.insertAtIndex(500, 1);
-linked.removeTheNode(5);
+linked.removeTheNode(0);
 linked.printListData();
