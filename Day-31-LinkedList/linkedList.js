@@ -87,6 +87,11 @@ class LinkedList {
     }
     this.size--;
   }
+  // Clear the list
+  clearTheList() {
+    this.head = null;
+    this.size = 0;
+  }
 
   // Print list data
   printListData() {
@@ -98,10 +103,3 @@ class LinkedList {
   }
 }
 const linked = new LinkedList();
-linked.insertFirstNode(100);
-linked.insertFirstNode(200);
-linked.insertFirstNode(300);
-linked.insertLastNode(400);
-linked.insertAtIndex(500, 1);
-linked.removeTheNode(0);
-linked.printListData();
