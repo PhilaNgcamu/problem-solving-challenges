@@ -4,3 +4,6 @@ class Node {
     this.next = next;
   }
 }
+
+const node1 = new Node(100);
+console.log(node1);

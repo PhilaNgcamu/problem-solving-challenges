@@ -6,6 +6,9 @@
 
 <h2>Creating Nodes</h2>
 
+- Reference: [linkedLists.js](linkedlists.js).
 - Declare the class, Node which takes in 2 parameters (data, next), where _data_ is the actual working data and _next_ is the pointer to the next node.
 - If there is no preceeding node set the next variable to _null_.
 - Then create an instance for the node.
+
+<h2>Creating Linked Lists</h2>
