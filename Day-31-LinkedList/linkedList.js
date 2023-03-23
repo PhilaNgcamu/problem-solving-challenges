@@ -35,7 +35,7 @@ class LinkedList {
   // Insert data at an index
   insertAtIndex(data, index) {
     // if there's no index then return nothing
-    if (index > 0 && index > this.size) {
+    if (index > 0 && index >= this.size) {
       return;
     } else if (index === 0) {
       this.head = new Node(data, this.head);
@@ -69,6 +69,24 @@ class LinkedList {
     }
     return null;
   }
+  // Remove node at the index
+  removeTheNode(index) {
+    if (index > 0 && index >= this.size) return null;
+    let currentNode = this.head;
+    let previousNode;
+    let count = 0;
+    // If first is removed
+    if (index === 0) this.head = currentNode.next;
+    else {
+      while (count < index) {
+        previousNode = currentNode;
+        currentNode = currentNode.next;
+        count++;
+      }
+      previousNode.next = currentNode.next;
+    }
+    this.size--;
+  }
 
   // Print list data
   printListData() {
@@ -85,5 +103,5 @@ linked.insertFirstNode(200);
 linked.insertFirstNode(300);
 linked.insertLastNode(400);
 linked.insertAtIndex(500, 1);
+linked.removeTheNode(5);
 linked.printListData();
-linked.getTheNode(4);
