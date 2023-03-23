@@ -15,4 +15,4 @@
 
 - Reference: [linkedList.js](linkedList.js).
 - Declare the LinkedList class, which has a constructor with the head equal to null and the size equal to zero.
-- Then, the class should have methods to insert data at the nodes, at a specific index, getting node at an index, removing the node at an index, clearing the list and printing the list data.
+- Then, the class should have methods to insert data in the nodes, at a specific index, getting node at an index, removing the node at an index, clearing the list and printing the list data.

@@ -18,26 +18,63 @@ class LinkedList {
   // Insert the last node
   insertLastNode(data) {
     let node = new Node(data);
-    let current;
+    let currentNode;
 
     //If head is empty then assign it to the node
     if (!this.head) {
       this.head = node;
     } else {
-      current = this.head;
-      while (current.next) {
-        current = current.next;
+      currentNode = this.head;
+      while (currentNode.next) {
+        currentNode = currentNode.next;
       }
-      current.next = node;
+      currentNode.next = node;
     }
     this.size++;
   }
+  // Insert data at an index
+  insertAtIndex(data, index) {
+    // if there's no index then return nothing
+    if (index > 0 && index > this.size) {
+      return;
+    } else if (index === 0) {
+      this.head = new Node(data, this.head);
+      return;
+    }
+    const node = new Node(data, this.head);
+    let currentNode, previousNode;
+
+    // Set the current node to the first (head)
+    currentNode = this.head;
+    let count = 0;
+    while (count < index) {
+      previousNode = currentNode; // Node before the index
+      count++;
+      currentNode = currentNode.next; // Node after the index
+    }
+
+    node.next = currentNode;
+    previousNode.next = node;
+
+    this.size++;
+  }
+  // Get the node at an index
+  getTheNode(index) {
+    let currentNode = this.head;
+    let count = 0;
+    while (currentNode) {
+      if (count === index) console.log(currentNode);
+      count++;
+      currentNode = currentNode.next;
+    }
+  }
+
   // Print list data
   printListData() {
-    let current = this.head;
-    while (current) {
-      console.log(current.data);
-      current = current.next;
+    let currentNode = this.head;
+    while (currentNode) {
+      console.log(currentNode.data);
+      currentNode = currentNode.next;
     }
   }
 }
@@ -46,6 +83,8 @@ linked.insertFirstNode(100);
 linked.insertFirstNode(200);
 linked.insertFirstNode(300);
 linked.insertLastNode(400);
+linked.insertAtIndex(500, 1);
+linked.getTheNode(2);
 
 linked.printListData();
 
