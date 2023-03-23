@@ -67,6 +67,7 @@ class LinkedList {
       count++;
       currentNode = currentNode.next;
     }
+    return null;
   }
 
   // Print list data
@@ -84,8 +85,5 @@ linked.insertFirstNode(200);
 linked.insertFirstNode(300);
 linked.insertLastNode(400);
 linked.insertAtIndex(500, 1);
-linked.getTheNode(2);
-
 linked.printListData();
-
-console.log(linked);
+linked.getTheNode(4);
