@@ -1,3 +1,3 @@
-# problem-solving-challenges
+<h1>linked Lists</h1>
 
-Learning Linked Lists.
+- A linked list is a linear data structure (ordered collection of data)
