@@ -52,11 +52,25 @@ class LinkedList {
     previousNode.pointer = node;
     this.size++;
   }
+  // Get the node at an index
+  getNodeAtIndex(index) {
+    if (index >= this.size || index < 0) return null;
+    let count = 0;
+    let currentNode = this.head;
+    let previousNode;
+    while (count < index) {
+      previousNode = currentNode;
+      currentNode = currentNode.pointer;
+      count++;
+    }
+    return currentNode;
+  }
 }
 
 const linkedList = new LinkedList();
 linkedList.insertFirstNode(100);
 linkedList.insertTheLastNode(200);
 linkedList.insertAtIndex(4, 1);
-
 console.log(linkedList);
+
+console.log(linkedList.getNodeAtIndex(3));
