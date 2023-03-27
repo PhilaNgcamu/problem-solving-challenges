@@ -84,13 +84,24 @@ class LinkedList {
     previousNode.pointer = currentNode.pointer;
     this.size--;
   }
+  // Clear the list
+  clearTheList() {
+    this.head = null;
+    this.size = 0;
+  }
+  // Print list data
+  printTheData() {
+    let currentNode = this.head;
+    while (currentNode) {
+      console.log(currentNode.data);
+      currentNode = currentNode.pointer;
+    }
+  }
 }
 
 const linkedList = new LinkedList();
 linkedList.insertFirstNode(100);
 linkedList.insertTheLastNode(200);
 linkedList.insertAtIndex(4, 1);
-linkedList.deleteNodeAtIndex(2);
 console.log(linkedList);
-
-console.log(linkedList.getNodeAtIndex(3));
+linkedList.printTheData();
