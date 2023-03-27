@@ -65,12 +65,32 @@ class LinkedList {
     }
     return currentNode;
   }
+  // Remove node at the index
+  deleteNodeAtIndex(index) {
+    if (index >= this.size || index < 0) return null;
+    else if (index === 0) {
+      this.head = null;
+      this.size = 0;
+      return;
+    }
+    let currentNode = this.head;
+    let previousNode;
+    let count = 0;
+    while (count < index) {
+      previousNode = currentNode;
+      currentNode = currentNode.pointer;
+      count++;
+    }
+    previousNode.pointer = currentNode.pointer;
+    this.size--;
+  }
 }
 
 const linkedList = new LinkedList();
 linkedList.insertFirstNode(100);
 linkedList.insertTheLastNode(200);
 linkedList.insertAtIndex(4, 1);
+linkedList.deleteNodeAtIndex(2);
 console.log(linkedList);
 
 console.log(linkedList.getNodeAtIndex(3));
