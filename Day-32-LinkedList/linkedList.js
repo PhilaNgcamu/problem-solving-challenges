@@ -97,6 +97,15 @@ class LinkedList {
       currentNode = currentNode.pointer;
     }
   }
+  printTheLengthOfTheList() {
+    let currentNode = this.head;
+    let length = 0;
+    while (currentNode) {
+      currentNode = currentNode.pointer;
+      length++;
+    }
+    return length;
+  }
 }
 
 const linkedList = new LinkedList();
@@ -104,4 +113,5 @@ linkedList.insertFirstNode(100);
 linkedList.insertTheLastNode(200);
 linkedList.insertAtIndex(4, 1);
 console.log(linkedList);
+console.log(linkedList.printTheLengthOfTheList());
 linkedList.printTheData();
