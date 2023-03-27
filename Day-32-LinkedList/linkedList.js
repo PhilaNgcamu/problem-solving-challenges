@@ -30,12 +30,13 @@ class LinkedList {
   }
   // Insert data at an index
   insertAtIndex(data, index) {
-    this.size++;
     if (!this.head) {
       this.head = new Node(data);
-    } else if (index >= this.size) return null;
+      return;
+    } else if (index >= this.size || index < 0) return null;
     else if (index === 0) {
       this.head = new Node(data, this.head);
+      this.size++;
       return;
     }
     let count = 0;
@@ -49,6 +50,7 @@ class LinkedList {
     }
     node.pointer = currentNode;
     previousNode.pointer = node;
+    this.size++;
   }
 }
 
