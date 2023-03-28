@@ -35,3 +35,11 @@ const friends = [
     age: 18,
   },
 ];
+const result = friends.reduce((array, obj) => {
+  const res = [];
+  res.push(obj.name);
+  array.push(...res);
+  return array;
+}, []);
+
+console.log(result);
