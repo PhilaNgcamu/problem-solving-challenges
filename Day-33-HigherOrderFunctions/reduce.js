@@ -16,6 +16,7 @@ const sum = objects.reduce(
   (accumulator, currentValue) => accumulator + currentValue.x,
   0
 );
+console.log(sum);
 
 const friends = [
   {
@@ -34,5 +35,3 @@ const friends = [
     age: 18,
   },
 ];
-
-console.log(sum);
