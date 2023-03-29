@@ -16,4 +16,5 @@ DA, DB, DC
 ```
 
 2. Use equations for Permutations and Combinations.
-   - For Permutations
+   - For Permutations: **nPr = n!/(n - r)!,** where n = total number of things, r = no of the letters which will be arranges and P = Permutations.
+   - For Combinations: **nCr = n!/(n - r)! \* 1/r!**, where n = total number of things, r = no of the letters which will be arranges and C = Combinations.
