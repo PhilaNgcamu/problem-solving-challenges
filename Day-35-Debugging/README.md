@@ -1,3 +1,3 @@
 # problem-solving-challenges
 
-Solved 1 challenges this day.
+Solved 2 challenges this day.
