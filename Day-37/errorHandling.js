@@ -21,11 +21,15 @@
 // }
 
 try {
-  function error(name) {
-    if (!name) throw new Error("There's no name");
-    return name;
+  try {
+    throw "error I guess";
+  } catch (error) {
+    console.error("Yep");
+  } finally {
+    console.log("Finally!");
   }
-  throw boo("Alice");
+  throw new Error("This is error");
+  console.log("Execution on this bli");
 } catch (error) {
   console.error(error.message);
 }
