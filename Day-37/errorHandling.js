@@ -9,3 +9,11 @@
 // } catch (error) {
 //   console.error(error.message);
 // }
+
+try {
+  function boo(name) {
+    if (!name) throw new Error("There's no name");
+  }
+} catch (error) {
+  console.error(error.message);
+}
