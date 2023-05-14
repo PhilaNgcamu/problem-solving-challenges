@@ -36,34 +36,36 @@
 //   console.error(error.message);
 // }
 
-try {
-  try {
-    throw "Throw the error";
-  } catch (error) {
-    console.error("Yes, the error is thrown");
-    console.log("Execution on this block scope is done");
-    throw new Error("Many errors being thown");
-  } finally {
-    console.log("Finally! I guess");
-  }
-  throw new Error("This is error");
-  console.log("Execution on this block scope is done");
-} catch (error) {
-  console.error(error.message);
-}
-
-// (() => {
+// try {
 //   try {
-//     try {
-//       throw new Error("oops");
-//     } catch (ex) {
-//       console.error("inner", ex.message);
-//       throw ex;
-//     } finally {
-//       console.log("finally");
-//       return;
-//     }
-//   } catch (ex) {
-//     console.error("outer", ex.message);
+//     throw "Throw the error";
+//   } catch (error) {
+//     console.error("Yes, the error is thrown");
+//     console.log("Execution on this block scope is done");
+//     throw new Error("Many errors being thown");
+//   } finally {
+//     console.log("Finally! I guess");
 //   }
-// })();
+//   throw new Error("This is error");
+//   console.log("Execution on this block scope is done");
+// } catch (error) {
+//   console.error(error.message);
+// }
+
+// console.log(
+//   (() => {
+//     try {
+//       try {
+//         throw new Error("oops");
+//       } catch (ex) {
+//         console.error("inner", ex.message);
+//         throw ex;
+//       } finally {
+//         console.log("finally");
+//         return "Phila";
+//       }
+//     } catch (ex) {
+//       console.error("outer", ex.message);
+//     }
+//   })()
+// );
