@@ -69,3 +69,17 @@
 //     }
 //   })()
 // );
+
+function main() {
+  print(1);
+}
+
+function print(num) {
+  if (num === 5) console.log(num);
+  else {
+    console.log(num);
+    print(num + 1);
+  }
+}
+
+main();
