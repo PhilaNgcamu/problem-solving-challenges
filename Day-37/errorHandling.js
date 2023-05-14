@@ -13,7 +13,9 @@
 try {
   function boo(name) {
     if (!name) throw new Error("There's no name");
+    return name;
   }
+  throw boo("Alice");
 } catch (error) {
   console.error(error.message);
 }
