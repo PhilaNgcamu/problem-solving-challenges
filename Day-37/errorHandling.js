@@ -29,7 +29,7 @@ try {
     console.log("Finally!");
   }
   throw new Error("This is error");
-  console.log("Execution on this bli");
+  console.log("Execution on this block scope is done");
 } catch (error) {
   console.error(error.message);
 }
