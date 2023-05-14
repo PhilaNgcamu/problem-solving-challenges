@@ -1,5 +1,11 @@
+// try {
+//   throw new Error("This might be an error");
+// } catch (error) {
+//   console.error(error.message);
+// }
+
 try {
-  console.log("This might be an error");
+  throw new Error("This might be an error");
 } catch (error) {
   console.error(error.message);
 }
