@@ -22,11 +22,12 @@
 
 try {
   try {
-    throw "error I guess";
+    throw "Thow the error";
   } catch (error) {
-    console.error("Yep");
+    console.error("Yes, the error is thrown");
+    console.log("Execution on this block scope is done");
   } finally {
-    console.log("Finally!");
+    console.log("Finally! I guess");
   }
   throw new Error("This is error");
   console.log("Execution on this block scope is done");
