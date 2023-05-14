@@ -51,3 +51,19 @@ try {
 } catch (error) {
   console.error(error.message);
 }
+
+// (() => {
+//   try {
+//     try {
+//       throw new Error("oops");
+//     } catch (ex) {
+//       console.error("inner", ex.message);
+//       throw ex;
+//     } finally {
+//       console.log("finally");
+//       return;
+//     }
+//   } catch (ex) {
+//     console.error("outer", ex.message);
+//   }
+// })();
