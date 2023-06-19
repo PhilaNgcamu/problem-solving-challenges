@@ -11,4 +11,17 @@ function minMax(arr) {
   return [min, max];
 }
 
+function minMax(arr) {
+  const array = [...arr];
+  let min = array[0];
+  let max = array[0];
+  let i = 1;
+  while (i < array.length) {
+    if (array[i] < min) min = array[i];
+    if (array[i] > max) max = array[i];
+    i++;
+  }
+  return [min, max];
+}
+
 console.log(minMax([-4, 4, 2, 5, 33, 5, 9, 19]));
