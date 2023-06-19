@@ -7,4 +7,13 @@ function reverseArray(arr) {
   return result;
 }
 
+// function reverseArray(arr) {
+//     const array = [...arr];
+//     const result = [];
+//     for (const elem of array) {
+//       result.push(elem);
+//     }
+//     return result;
+//   }
+
 console.log(reverseArray([1, 2, 3, 4, 5]));
