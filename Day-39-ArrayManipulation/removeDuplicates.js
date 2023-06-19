@@ -1,6 +1,10 @@
 //Remove Duplicates: Write a function to remove duplicate elements from an array.
 function removeDuplicates(arr) {
-  return arr;
+  const obj = {};
+  for (let i = 0; i < arr.length; i++) {
+    if (!obj[arr[i]]) obj[arr[i]] = arr[i];
+  }
+  return Object.values(obj);
 }
 
 console.log(
