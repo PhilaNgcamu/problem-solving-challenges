@@ -1,3 +1,3 @@
 # Array Manipulation in JavaScript
 
-- Solved 2 problems this day.
+- Solved 3 problems this day.
