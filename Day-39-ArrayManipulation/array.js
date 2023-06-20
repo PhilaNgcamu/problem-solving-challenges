@@ -1,7 +1,10 @@
-const cars = ["Polo", "Volvo", "BMW", "Uno", "Lambo"];
+// const cars = ["Polo", "Volvo", "BMW", "Uno", "Lambo"];
 
-for (const index in cars) {
-  console.log(cars[index]);
-}
+// for (const index in cars) {
+//   console.log(cars[index]);
+// }
 
-console.log(cars.join(" ").split());
+// console.log(cars.join("").split(/o|n|d/));
+
+const colours = ["green", "yellow", "blue", "green"];
+console.log(colours.lastIndexOf("green"));
