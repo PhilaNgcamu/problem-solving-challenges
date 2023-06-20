@@ -8,4 +8,4 @@
 
 const colours = ["green", "yellow", "blue", "green"];
 console.log(colours.lastIndexOf("green"));
-console.log(colours.filter((colour) => colour === "blue"));
+console.log(colours.findLast((colour) => colour));
