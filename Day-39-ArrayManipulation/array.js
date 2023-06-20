@@ -4,4 +4,4 @@ for (const index in cars) {
   console.log(cars[index]);
 }
 
-console.log(cars.join(" ").replace(/BMW/, /Isuzu Jeep Toyota/));
+console.log(cars.join(" ").split());
