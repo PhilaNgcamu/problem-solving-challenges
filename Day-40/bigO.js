@@ -23,7 +23,7 @@ function countUpAndDown(n) {
 
   console.log("At the top!\nGoing Down...");
 
-  //For the second loop below the number of operations is alse O(n)
+  //For the second loop below the number of operations is also O(n)
   for (let j = n - 1; j >= 0; j--) {
     console.log(j);
   }
