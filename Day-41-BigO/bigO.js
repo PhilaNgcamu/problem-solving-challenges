@@ -12,7 +12,7 @@ function logAtMost5(n) {
   }
 }
 
-//The sum function: As the array length grows (input) the space is still the same (constant). Therefore, the notation for it is O(n)
+//The sum function: As the array length grows (input) the space is still the same (constant). Therefore, the notation for it is O(1)
 function sum(arr) {
   let total = 0; //this assignment (total variable) takes space
   //this assignment (i = 0) takes space
