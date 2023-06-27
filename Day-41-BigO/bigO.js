@@ -11,3 +11,13 @@ function logAtMost5(n) {
     console.log(i);
   }
 }
+
+//
+function sum(arr) {
+  let total = 0; //this assignment (total variable) takes space
+  //this assignment (i = 0) takes space
+  for (let i = 0; i < arr.length; i++) {
+    total += arr[i]; //already the total variable is declared, the space doesn't change, even if we re-assign values on it.
+  }
+  return total;
+}
