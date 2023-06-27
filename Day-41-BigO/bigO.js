@@ -28,5 +28,5 @@ function double(arr) {
   for (let i = 0; i < arr.length; i++) {
     newArr.push(2 * arr[i]);
   }
-  return newArr; //newArr length is increased if the number of inputs(array length) is increase
+  return newArr; //newArr length is increased if the number of inputs(array length) is increased
 }
