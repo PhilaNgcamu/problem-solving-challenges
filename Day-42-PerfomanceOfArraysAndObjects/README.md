@@ -24,3 +24,5 @@ Link to [JavaScript Algorithms and Data Structures Masterclass on Udemy](https:/
 - Removal - It depends, if I want to remove a value from the array then the perfomance will be slower because the array re-initializes indeces to values.
 - Searching - O(N)
 - Access - O(N)
+
+> NOTE: Push and Pop array methods are faster than Shift and Unshift
