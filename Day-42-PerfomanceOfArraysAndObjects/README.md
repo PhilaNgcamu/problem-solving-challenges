@@ -32,4 +32,4 @@ Link to [JavaScript Algorithms and Data Structures Masterclass on Udemy](https:/
 - Push, pop - O(1)
 - Shift, unshift - O(N)
 - sort - O(N \* log N)
-- forEach/mao/filter/reduce/etc. - O(N)
+- forEach/map/filter/reduce/etc. - O(N)
