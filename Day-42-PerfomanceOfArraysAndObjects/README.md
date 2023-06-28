@@ -17,3 +17,10 @@ Link to [JavaScript Algorithms and Data Structures Masterclass on Udemy](https:/
 - Object.values - O(N)
 - Object.entries - O(N)
 - hasOwnProperty - O(1)
+
+<h2>Big O of Arrays</h2>
+
+- Insertion - It depends, if I want to insert a value at the beginning of the array then the perfomance will be slower than adding it at the end because the array re-initializes indeces to values.
+- Removal - It depends, if I want to remove a value from the array then the perfomance will be slower because the array re-initializes indeces to values.
+- Searching - O(N)
+- Access - O(N)
