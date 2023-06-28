@@ -4,8 +4,6 @@ Link to [JavaScript Algorithms and Data Structures Masterclass on Udemy](https:/
 
 <h1>Analysing the performance of Objects and Arrays<h1>
 
-- We'll look at the perfomance of arrays and objects.
-
 <h2>Big O of Objects</h2>
 
 - Insertion - O(1)
