@@ -26,3 +26,10 @@ Link to [JavaScript Algorithms and Data Structures Masterclass on Udemy](https:/
 - Access - O(N)
 
 > NOTE: Push and Pop array methods are faster than Shift and Unshift
+
+<h2>Big O of Array Operations</h2>
+
+- Push, pop - O(1)
+- Shift, unshift - O(N)
+- sort - O(N \* log N)
+- forEach/mao/filter/reduce/etc. - O(N)
