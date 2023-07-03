@@ -20,3 +20,7 @@ When you are faced with a problem:
 - Do all step 1 and start with simple examples.
 - Then, progress to more complex examples
 - Then, progress to explore more examples with empty inputs and/ or invalid inputs.
+
+<h2>Step 3: Break It Down</h2>
+
+Explicitly write down the steps you need to take - which **forces** to think about the code you'll write before you write it and helps you catch potential misunderstandngs before diving into the code.
