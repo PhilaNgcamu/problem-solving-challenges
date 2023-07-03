@@ -24,3 +24,10 @@ When you are faced with a problem:
 <h2>Step 3: Break It Down</h2>
 
 Explicitly write down the steps you need to take - which **forces** to think about the code you'll write before you write it and helps you catch potential misunderstandngs before diving into the code.
+
+<h2>Step 4: Solve or simplify</h2>
+
+- Find the **core difficulty** in what you're trying to do.
+- Temporarily ignore that difficulty
+- Write a simplified solution
+- Then, incorporate that difficulty back in
