@@ -20,4 +20,10 @@ function createPhoneNumber(arr) {
   return format;
 }
 
+function createPhoneNumber(arr) {
+  const copy = [...arr];
+
+  return copy.join("").replace(/(...)(...)(.*)/, "($1) $2-$3");
+}
+
 console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));
