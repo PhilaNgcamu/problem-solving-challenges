@@ -31,3 +31,13 @@ Explicitly write down the steps you need to take - which **forces** to think abo
 - Temporarily ignore that difficulty
 - Write a simplified solution
 - Then, incorporate that difficulty back in
+
+<h2>Step 4: Solve or simplify</h2>
+
+- Can you check the result?
+- Can you derive the result differently?
+- Can you understand it at a glance?
+- Can you use the result or method for some problem?
+- Can you improve the perfomance of your solution?
+- Can you think of other ways to refactor?
+- How have other people solved it?
