@@ -20,4 +20,13 @@ function duplicateEncode(word) {
   return result;
 }
 
-console.log(duplicateEncode("j"));
+function duplicateEncode(word) {
+  return word
+    .toLowerCase()
+    .split("")
+    .map((letter, index, array) =>
+      array.indexOf(letter) === array.lastIndexOf(letter) ? "(" : ")"
+    )
+    .join("");
+}
+console.log(duplicateEncode("Philasande"));
