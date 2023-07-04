@@ -24,7 +24,7 @@ function duplicateEncode(word) {
   return word
     .toLowerCase()
     .split("")
-    .map((letter, index, array) =>
+    .map((letter, _index, array) =>
       array.indexOf(letter) === array.lastIndexOf(letter) ? "(" : ")"
     )
     .join("");
