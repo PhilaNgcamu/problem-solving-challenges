@@ -1,3 +1,3 @@
 # Problem Solving: Debugging
 
-Solved 3 challenges this day.
+Solved 4 challenges this day.
