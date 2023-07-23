@@ -1,11 +1,11 @@
-// A new programmer was supposed to write a simple helper function to capitalize a string (that contains a single word) before they went on vacation.
+// Jenny has written a function that returns a greeting for a user. However, she's in love with Johnny, and would like to greet him slightly different. She added a special case to her function, but she made a mistake.
 
-// Unfortunately, they have now left and the code they gave you doesn't work. Fix the helper function they wrote so that it works as intended (i.e. make the first character in the string "word" upper case).
+// Can you help her?
 
-function capitalizeWord(word) {
-  word[0].toUpperCase();
-  return word;
-}
+// function greet(name) {
+//   return "Hello, " + name + "!";
+//   if (name === "Johnny") return "Hello, my love!";
+// }
 
 //1.How can we restate the problem, in your own words?
 
