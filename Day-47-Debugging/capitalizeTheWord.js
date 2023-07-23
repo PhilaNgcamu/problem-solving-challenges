@@ -14,6 +14,7 @@ function capitalizeWord(word) {
 //3. What should the output look like? (Do we understand how the solution would look like?)
 
 //4. Break down the problem (psedocode)
+//--do we have any errors on our given code?
 //--then code (if the problem is difficult, let's come up with examples to solidify our understanding)
 
 //5. refactor the solved problem (if possible)
