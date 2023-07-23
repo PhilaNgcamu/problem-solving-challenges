@@ -3,12 +3,10 @@
 // Unfortunately, they have now left and the code they gave you doesn't work. Fix the helper function they wrote so that it works as intended (i.e. make the first character in the string "word" upper case).
 
 function capitalizeWord(word) {
-  return word
-    .split(" ")
-    .map((w) => w[0].toUpperCase() + w.slice(1))
-    .join(" ");
+  word[0].toUpperCase();
+  return word;
 }
-console.log(capitalizeWord("capitalize the word"));
+
 //1.How can we restate the problem, in your own words?
 
 //2. What are the inputs that go into the problem?
