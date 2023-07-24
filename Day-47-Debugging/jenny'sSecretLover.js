@@ -11,10 +11,10 @@
 
 //2. What are the inputs that go into the problem?
 
-//3. What should the output look like? (Do we understand how the solution would look like?)
+//3. What should the output look like from the inputs we have? (Do we understand how the solution would look like?)
 
-//4. Break down the problem (psedocode)
-//--do we have any errors on our given code? How do we fix that?
+//4. Break down the problem (pseudocode)
+//--do we have any errors on our given code (line by line / block of code)? How do we fix that?
 //--then code (if the problem is difficult, let's come up with examples to solidify our understanding)
 
 //5. refactor the solved problem (if possible)
