@@ -1,3 +1,3 @@
 # Problem Solving: Day 49
 
-- Solved 1 challenge this day.
+- Solved 2 challenges this day.
