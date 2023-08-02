@@ -1,8 +1,18 @@
 // Determine it's a magic square
 const isMagicSquare = (matrix) => {
   const sum = matrix[0][0] + matrix[0][1] + matrix[0][2];
-  let isMatrix = true;
+  const isMatrix = true;
   //Check for each row
+  for (let i = 0; i < matrix.length; i++) {
+    const currentSum = matrix[i][0] + matrix[i][1] + matrix[i][2];
+    if (currentSum !== sum) return false;
+  }
+  //check for each column
+  for (let i = 0; i < matrix.length; i++) {
+    const currentSum = matrix[i][0] + matrix[i][1] + matrix[i][2];
+    if (currentSum !== sum) return false;
+  }
+  //check for each diagonal
   for (let i = 0; i < matrix.length; i++) {
     const currentSum = matrix[i][0] + matrix[i][1] + matrix[i][2];
     if (currentSum !== sum) return false;
