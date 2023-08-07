@@ -7,7 +7,7 @@ function formattedDivision(num1, num2) {
   const formattedString = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   return `${formattedString}.${parts[1]}`;
 }
-console.log(formattedDivision(20000, 10));
+console.log(formattedDivision(123456789, 10));
 // 1. How can we restate the problem, in your own words?
 // divide num1 by num2 and return a string with formatted commas and 4 significant digits
 
