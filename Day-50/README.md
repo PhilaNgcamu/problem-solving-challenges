@@ -1,6 +1,6 @@
 # Problem Solving: Day 50 - Practicing Coderbyte challenges
 
-Solved 0 problems this day.
+Solved 1 problem this day.
 
 How to solve any problem:
 
