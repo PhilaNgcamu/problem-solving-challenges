@@ -1,6 +1,8 @@
 # Problem Solving: Day 50 - Practicing Coderbyte challenges
 
-Solved 2 problems this day.
+Solved 2 problems and 1 unsolved this day.
+
+- Note: Look what are permutations in code.
 
 How to solve any problem:
 
