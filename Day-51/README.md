@@ -4,4 +4,4 @@
 <h2>Frequency Counters</h2>
 
 - This pattern uses objects or sets to collect values/frequencies of values and compare them if they have similar values.
-- This can often avoid the need for nested loops or O(N^2) operations with arrays/strings
+- This can often **avoid the need for nested loops** or O(N^2) operations with arrays/strings
