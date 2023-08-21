@@ -2,8 +2,6 @@
 
 Solved 0 problems this day.
 
-- Note: Look what are permutations in code.
-
 How to solve any problem:
 
 1. How can we restate the problem, in your own words?
