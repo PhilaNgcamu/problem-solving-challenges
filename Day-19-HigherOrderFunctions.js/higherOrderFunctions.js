@@ -6,71 +6,74 @@ const animals = [
   { name: "Ursula", species: "cat" },
   { name: "Jimmy", species: "fish" },
 ];
-//--Filter()
-//const dogs = [];
-// for (let i = 0; i < animals.length; i++) {
-//   //turn the if statement as filter condition in the .filter
-//   if (animals[i].species === "dog") dogs.push(animals[i]);
-// }
 
-// const isDog = function (animal) {
-//   return animal.species === "dog";
-// };
+//filter
 
-// const dogs = animals.filter(isDog);
+const arr = [];
 
-// console.log(dogs);
+for (let i = 0; i < animals.length; i++) {
+  arr.push(animals[i].name);
+}
+console.log(arr);
 
-//--Map
-// const names = [];
-// for (let i = 0; i < animals.length; i++) {
-//   names.push(animals[i].name);
-// }
+// // const isDog = function (animal) {
+// //   return animal.species === "dog";
+// // };
 
-// console.log(names);
+// // const dogs = animals.filter(isDog);
 
-// const names = animals.map((animal) => animal.name);
+// // console.log(dogs);
 
-// console.log(names);
+// //--Map
+// // const names = [];
+// // for (let i = 0; i < animals.length; i++) {
+// //   names.push(animals[i].name);
+// // }
 
-//--Reduce
-const orders = [
-  { amount: 250 },
-  { amount: 400 },
-  { amount: 100 },
-  { amount: 325 },
-];
+// // console.log(names);
 
-// let totalAmount = 0;
-// for (let i = 0; i < orders.length; i++) {
-//   totalAmount += orders[i].amount;
-// }
-// console.log(totalAmount);
+// // const names = animals.map((animal) => animal.name);
 
-// const totalAmount = orders.reduce((sum, order) => sum + order.amount, 0);
-// console.log(totalAmount);
+// // console.log(names);
 
-//The task is to convert the customers array to an object using reduce. Each array contains item, price and quantity where, customer[i], i = 0 (name), i = 1 (item), i = 2 (price), i = 3 (quantity)
-const customers = [
-  ["Mark Johansson", "waffle iron", 80, 2],
-  ["Mark Johansson", "blender", 200, 1],
-  ["Mark Johansson", "knife", 10, 4],
-  ["John Doe", "waffle iron", 80, 1],
-  ["John Doe", "knife", 10, 2],
-  ["John Doe", "pot", 20, 3],
-];
+// //--Reduce
+// const orders = [
+//   { amount: 250 },
+//   { amount: 400 },
+//   { amount: 100 },
+//   { amount: 325 },
+// ];
 
-const obj = customers.reduce((customerObj, currentValue) => {
-  if (!customerObj[currentValue[0]]) customerObj[currentValue[0]] = [];
-  customerObj[currentValue[0]].push({
-    item: currentValue[1],
-    price: currentValue[2],
-    quantity: currentValue[3],
-  });
-  return { ...customerObj };
-}, {});
-console.log(obj);
-// {
-//   "Mark ...": [{"item": .."price":.., "quantity":... }, {"item": .."price":.., "quantity":... }... ],
-//   "John Doe": [{"item": .."price":.., "quantity":... }]
-// }
+// // let totalAmount = 0;
+// // for (let i = 0; i < orders.length; i++) {
+// //   totalAmount += orders[i].amount;
+// // }
+// // console.log(totalAmount);
+
+// // const totalAmount = orders.reduce((sum, order) => sum + order.amount, 0);
+// // console.log(totalAmount);
+
+// //The task is to convert the customers array to an object using reduce. Each array contains item, price and quantity where, customer[i], i = 0 (name), i = 1 (item), i = 2 (price), i = 3 (quantity)
+// const customers = [
+//   ["Mark Johansson", "waffle iron", 80, 2],
+//   ["Mark Johansson", "blender", 200, 1],
+//   ["Mark Johansson", "knife", 10, 4],
+//   ["John Doe", "waffle iron", 80, 1],
+//   ["John Doe", "knife", 10, 2],
+//   ["John Doe", "pot", 20, 3],
+// ];
+
+// const obj = customers.reduce((customerObj, currentValue) => {
+//   if (!customerObj[currentValue[0]]) customerObj[currentValue[0]] = [];
+//   customerObj[currentValue[0]].push({
+//     item: currentValue[1],
+//     price: currentValue[2],
+//     quantity: currentValue[3],
+//   });
+//   return { ...customerObj };
+// }, {});
+// console.log(obj);
+// // {
+// //   "Mark ...": [{"item": .."price":.., "quantity":... }, {"item": .."price":.., "quantity":... }... ],
+// //   "John Doe": [{"item": .."price":.., "quantity":... }]
+// // }
