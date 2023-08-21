@@ -1,15 +1,7 @@
 # Problem Solving: Day 51 - Udemy - JavaScript Algorithms and Data Structures Masterclass
 
-Solved 0 problems this day.
+<h1>Intro To Problem Solving Patterns</h2>
+<h2>Frequency Counters</h2>
 
-How to solve any problem:
-
-1. How can we restate the problem, in your own words?
-
-2. What are the inputs that go into the problem?
-
-3. What should the output look like from the inputs we have? (Do we understand how the solution would look like?)
-
-4. Break down the problem (pseudocode)
-
-5. refactor the solved problem (if possible)
+- This pattern uses objects or sets to collect values/frequencies of values and compare them if they have similar values.
+- This can often avoid the need for nested loops or O(N^2) operations with arrays/strings
