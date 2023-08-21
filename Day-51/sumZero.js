@@ -8,4 +8,17 @@ function sumZero(arr) {
     }
   }
 }
+
+// 2. Refactor - Time Complexity - O(N) and Space Complexity O(N)
+function sumZero(arr) {
+  let left = 0;
+  let right = arr.length - 1;
+  while (left < right) {
+    let sum = arr[left] + arr[right];
+    if (sum === 0) return [arr[left], arr[right]];
+    if (sum > 0) right--;
+    else left++;
+  }
+}
+
 console.log(sumZero([-3, -2, -1, 0, 1, 2, 3]));
