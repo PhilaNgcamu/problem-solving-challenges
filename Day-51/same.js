@@ -11,5 +11,23 @@ function same(arr1, arr2) {
   return true;
 }
 
-// 2. Refactored - Time Complexity - O(n)
+// 2. Refactored - Time Complexity - O(n): 2 separate loops -> O(2N)--> O(N)
+function same(arr1, arr2) {
+  if (arr1.length !== arr2.length) return false;
+  const frequencyCounterOne = {};
+  const frequencyCounterTwo = {};
+  for (const val of arr1) {
+    frequencyCounterOne[val] = (frequencyCounterOne[val] || 0) + 1;
+  }
+  for (const val of arr2) {
+    frequencyCounterTwo[val] = (frequencyCounterTwo[val] || 0) + 1;
+  }
+  for (const key in frequencyCounterOne) {
+    if (frequencyCounterOne[key] !== frequencyCounterTwo[key ** 2])
+      return false;
+    if (!(key ** 2 in frequencyCounterTwo)) return false;
+  }
+  console.log(frequencyCounterOne, frequencyCounterTwo);
+  return true;
+}
 console.log(same([1, 2, 3, 2], [9, 1, 4, 4]));
