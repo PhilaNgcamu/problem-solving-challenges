@@ -8,7 +8,7 @@ function eatBreakfast() {
 }
 
 function cookFood() {
-  let items = ["Oatmeat", "Eggs", "Protein Shake"];
+  let items = ["Oatmeal", "Eggs", "Protein Shake"];
   return items[Math.floor(Math.random() * items.length)];
 }
 
