@@ -17,3 +17,4 @@
 
 - Invoke the **same** function with a different input until you reach your base case.
 - Base case - The condition when the recursion ends (it's important).
+- **Two essential parts of a recursive function**: Base case and different input.
