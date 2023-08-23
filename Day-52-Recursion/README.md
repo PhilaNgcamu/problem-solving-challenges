@@ -23,3 +23,8 @@
 
 - If there's no base case, the function will not stop calling itself until the terminal shows the error, which may lead to stack overflow.
 - Forgetting to return or returning the wrong thing
+
+<h2>Helper Method Recursion</h2>
+
+- This is useful when we create an empty array where we will store the data in and then call the helper function.
+- The reason for it is that every time the main function is called it resets the array to an empty array. So, we need a helper function to collect data for use without the main function resetting the array to an empty one.
