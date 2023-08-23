@@ -49,5 +49,6 @@ function outer(input) {
 
 - The function itself is totally self contained and it's recursive, unlike the recursive helper function.
 - Pure recursion tips: for arrays, use methods like **slice(...)**, **the spread operator** and **concat(...)** to make copies of arrays without mutating them so that the function shall accumulate the expected result.
+- Then, for strings, use methods like **slice**, **substr** or **substring** to make copies of strings.
 
 Check [recursiveHelperMethod.js](recursiveHelperMethod.js) vs [pureRecursion.js](pureRecursion.js).
