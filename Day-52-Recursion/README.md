@@ -28,3 +28,19 @@
 
 - This is useful when we create an empty array where we will store the data in and then call the helper function.
 - The reason for it is that every time the main function is called it resets the array to an empty array. So, we need a helper function to collect data for use without the main function resetting the array to an empty one.
+- So basically we have an outer function which is not recursive and inner/helper recursive function which is called every time until it stopped. Example:
+
+```
+function outer(input) {
+    const outerScopedVariable = [];
+
+    function helper(helperInput) {
+        // Modify the outerScopedVariable
+        helper(helperInput--)
+    }
+
+    helper(input);
+
+    return outerScopedVariable;
+}
+```
