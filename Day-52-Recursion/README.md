@@ -44,3 +44,5 @@ function outer(input) {
     return outerScopedVariable;
 }
 ```
+
+Check [recursiveHelperMethod.js](recursiveHelperMethod.js) vs [pureRecursion.js](pureRecursion.js).
