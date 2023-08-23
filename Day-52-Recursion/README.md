@@ -45,4 +45,8 @@ function outer(input) {
 }
 ```
 
+<h2>Pure Recursion</h2>
+
+- The function itself is totally self contained and it's recursive, unlike the recursive helper function.
+
 Check [recursiveHelperMethod.js](recursiveHelperMethod.js) vs [pureRecursion.js](pureRecursion.js).
