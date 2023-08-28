@@ -24,4 +24,7 @@
 - [25, 26, 27, 28, 29, 30, 32, 35]
 - [29, 30, 32, 35]
 - [32, 35]
-- [**32**, 35]. Found 32.
+- [**32**, 35] --> Found 32. Yay!
+- 32 elements = 5 "steps"/operations (worst case scenario)
+- By doubling the elements to 64, then a 6th "step" or operation is added.
+- Ultimately, Binary search has a time complexity of log base 2 of N --> O(log N)
