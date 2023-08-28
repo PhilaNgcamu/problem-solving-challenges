@@ -14,3 +14,5 @@
 - Rather than eliminating one element at a time, eliminate "half" of the remaining element in a **sorted array**.
 - It only works in sorted arrays.
 - Divide and Conquer.
+
+> Note: If the array is not sorted use linear search or if the array is sorted, use binary search.
