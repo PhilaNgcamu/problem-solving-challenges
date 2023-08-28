@@ -16,3 +16,12 @@
 - Divide and Conquer.
 
 > Note: If the array is not sorted use linear search or if the array is sorted, use binary search.
+
+<h2>Binary Search Big O<h2>
+
+- Let's have an array of 32 elements. Let's do a visualization of binary search: [1, 2, 3, 4 ,5, 7, 8, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 32, 35]
+- [17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 32, 35]
+- [25, 26, 27, 28, 29, 30, 32, 35]
+- [29, 30, 32, 35]
+- [32, 35]
+- [**32**, 35]. Found 32.
