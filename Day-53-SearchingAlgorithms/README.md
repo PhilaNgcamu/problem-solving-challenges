@@ -7,3 +7,10 @@
 - Linear Search: Search for data one at a time. Example: Let's search for 12 in this given array: [5, 8, 1, 100, 12, 3, 12].
 - So, the algorithm will start at index 0 and check if a value is 12, if not move to the next index and so on to find 12. If it's found/not found then return a relevant result.
 - Linear Search Big O: Remember that in Big O, a general trend of the graph or the worst case scenario.
+
+<h2>Binary Search<h2>
+
+- Binary search is a much faster form of a search.
+- Rather than eliminating one element at a time, eliminate "half" of the remaining element in a **sorted array** .
+- It only works in sorted arrays.
+- Divide and Conquer.
