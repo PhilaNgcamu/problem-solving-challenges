@@ -11,6 +11,6 @@
 <h2>Binary Search<h2>
 
 - Binary search is a much faster form of a search.
-- Rather than eliminating one element at a time, eliminate "half" of the remaining element in a **sorted array** .
+- Rather than eliminating one element at a time, eliminate "half" of the remaining element in a **sorted array**.
 - It only works in sorted arrays.
 - Divide and Conquer.
