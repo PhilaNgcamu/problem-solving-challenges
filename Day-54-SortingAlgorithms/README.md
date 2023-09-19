@@ -17,10 +17,10 @@
 <h2>Bubble Sort - Time Complexity of O(n^2)</h2>
 
 - It's commonly not used and it's less efficient.
-- A sorting algorithm where the largest values _bubble up to the top!_
+- A sorting algorithm is a process where the largest value _bubble up to the top_ each time.
 - bubble up to the top - the largest value goes _up to the top_ by a single move one at a time.
-- Example: We've got a list of unordered numbers that we need to ascend in order. Using the sorting algorithm, the algorithm will compare two numbers and the largest number moves up higher on the index by swapping it with it's compared number and so on, unless otherwise.
-- If the first iteration is done given limit that the algorithm has to finish, it will continue from index 0 in a list until it reaches just before the sorted number, unless otherwise.
+- Example: We've got a list of unordered numbers that needs to ascend in order. Using the sorting algorithm, it will compare two numbers and the largest number will be swapped with it's compared number and so on.
+- When the first iteration is done, the algorithm will continue starting from index 0 in a list until it reaches just before the sorted number.
 - **Before we sort, we must swap!**. There's a swapping functionality in [sort.js](sort.js).
 
 <h2>Bubble Sort Pseudocode</h2>
