@@ -18,4 +18,7 @@
 
 - It's commonly not used and it's less efficient.
 - A sorting algorithm where the largest values _bubble up to the top!_
-- bubble up to the top - the relatively largest value goes _up to the top_ by a single move one at a time
+- bubble up to the top - the largest value goes _up to the top_ by a single move one at a time.
+- Example: We've got a list of unordered numbers that we need to ascend in order. Using the sorting algorithm, the algorithm will compare two numbers and the largest number moves up higher on the index by swapping it with it's compared number and so on, unless otherwise.
+- If the first iteration is done given limit that the algorithm has to finish, it will continue from index 0 in a list until it reaches just before the sorted number, unless otherwise.
+- **Before we sort, we must swap!**. There's a swapping functionality in [sort.js](sort.js).
