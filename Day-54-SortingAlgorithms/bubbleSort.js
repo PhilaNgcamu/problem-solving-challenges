@@ -11,17 +11,19 @@ const swap2 = (arr, idx1, idx2) => {
 
 // Bubble sorting: A naive approach
 function bubbleSort(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    console.log(arr);
+  for (let i = arr.length - 1; i > 0; i--) {
+    for (let j = 0; j < i; j++) {
+      console.log(arr, arr[j], arr[j + 1]);
 
-    for (let j = 0; j < arr.length; j++) {
       if (arr[j] > arr[j + 1]) {
         //SWAP!
         [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
       }
     }
   }
+  console.log(arr);
+
   return arr;
 }
 
-bubbleSort([37, 45, 29, 8]);
+bubbleSort([37, 45, 29, 8, 23, -9]);
