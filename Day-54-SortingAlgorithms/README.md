@@ -14,7 +14,7 @@
 - Must be aware of them in interviews.
 - JavaScript has it's own built-in method to play around with when sorting the list.
 
-<h2>Bubble Sort</h2>
+<h2>Bubble Sort - Time Complexity of O(n^2)</h2>
 
 - It's commonly not used and it's less efficient.
 - A sorting algorithm where the largest values _bubble up to the top!_
