@@ -26,4 +26,25 @@ function bubbleSort(arr) {
   return arr;
 }
 
-bubbleSort([37, 45, 29, 8, 23, -9]);
+// Bubble sorting: An optimized approach - useful for when there's a nearly sorted array
+function bubbleSort(arr) {
+  let noSwaps;
+  for (let i = arr.length - 1; i > 0; i--) {
+    //Assume no swaps will to take place
+    noSwaps = true;
+    for (let j = 0; j < i; j++) {
+      console.log(arr, arr[j], arr[j + 1]);
+      if (arr[j] > arr[j + 1]) {
+        //SWAP!
+        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+        noSwaps = false;
+      }
+    }
+    if (noSwaps) break;
+  }
+  console.log(arr);
+
+  return arr;
+}
+
+bubbleSort([8, 1, 2, 3, 4, 5, 6, 7]);
