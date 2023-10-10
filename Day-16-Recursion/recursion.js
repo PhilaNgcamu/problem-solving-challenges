@@ -1,12 +1,12 @@
-// let countDown = function f(n) {
-//   let nextNumber = n - 1;
-//   if (nextNumber === 1) {
-//     console.log(nextNumber);
-//   } else {
-//     console.log(nextNumber);
-//     countDown(nextNumber);
-//   }
-// };
+let countDown = function f(n) {
+  let nextNumber = n - 1;
+  if (nextNumber === 1) {
+    console.log(nextNumber);
+  } else {
+    console.log(nextNumber);
+    newYearCountDown(nextNumber);
+  }
+};
 // let newYearCountDown = countDown;
 // countDown = null;
 // newYearCountDown(10);
@@ -24,15 +24,16 @@
 
 // find the answer of given X raised to the power N using recursion. X = 5 and N = 3
 // 5 * 5 * 5 === 125
-// function power(X, N) {
-//   let pow = X;
-//   if (N === 1) return pow;
-//   else {
-//     return pow * power(pow, N - 1); // pow * (pow *( pow) N times
-//     //X^N = X * X^N-1
-//   }
-// }
-// console.log(power(5, 3));
+
+const power = (x, n) => {
+  if (n === 0) {
+    return 1;
+  }
+  console.log("log", power(x, n - 1));
+  return x * power(x, n - 1);
+};
+
+console.log(power(2, 3));
 
 //Recursive traversals examples:
 const company = {
@@ -169,14 +170,14 @@ const tree = {
   ],
 };
 //write the printAllChildren(t) - where tree is children
-function printAllChildren(t) {
-  if (t.children.length === 0) {
-    return;
-  }
-  t.children.forEach((child) => {
-    console.log(child.name);
-    printAllChildren(child);
-  });
-}
+// function printAllChildren(t) {
+//   if (t.children.length === 0) {
+//     return;
+//   }
+//   t.children.forEach((child) => {
+//     console.log(child.name);
+//     printAllChildren(child);
+//   });
+// }
 
-printAllChildren(tree);
+// printAllChildren(tree);
