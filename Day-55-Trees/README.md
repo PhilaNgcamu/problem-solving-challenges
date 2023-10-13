@@ -21,6 +21,22 @@
 - Binary Trees - Each node can have at most two children. They are sorted in order and can store data that can be compared when working with numbers often.
 
 - How BSTS work:
+
   - Each node should consist at most two children.
   - Every node at the left side of the parent node should be less than the parent.
   - Every node at the right side of the parent node should be more than the parent.
+
+- INSERTING A NODE (Steps - Iteratively or Recursively)
+
+- Create a new node
+- Starting at the root
+- Check if there is a root, if not - the root now becomes that new node!
+- If there is a root, check if the value of the new node is greater than or less than the value of the root
+- If it is greater
+- Check to see if there is a node to the right
+- If there is, move to that node and repeat these steps
+- If there is not, add that node as the right property
+- If it is less
+- Check to see if there is a node to the left
+- If there is, move to that node and repeat these steps
+- If there is not, add that node as the left property
