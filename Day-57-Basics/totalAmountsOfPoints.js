@@ -12,6 +12,18 @@ function points(games) {
   });
   return totalPoints;
 }
+function points(games) {
+  return games.reduce(
+    (sumOfAccX, elemOfXAndY) =>
+      (sumOfAccX +=
+        parseInt(elemOfXAndY[0]) > parseInt(elemOfXAndY[2])
+          ? 3
+          : parseInt(elemOfXAndY[0]) === parseInt(elemOfXAndY[2])
+          ? 1
+          : 0),
+    0
+  );
+}
 // 1. How can we restate the problem, in your own words?
 // -- x - team's score, y - opponents score
 
@@ -27,3 +39,4 @@ function points(games) {
 // -- While on each element, add check if x > y, x < y or x === y, then perform relevant actions
 
 // 5. refactor the solved problem (if possible)
+// -- Use reduce to get x
