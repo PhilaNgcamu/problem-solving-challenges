@@ -29,4 +29,42 @@ function factorial(input) {
 // function factorial10(input) {
 //   return input;
 // }
-console.log(factorial(10));
+//console.log(factorial(10));
+
+const numbers = [0, 1, 2, 5, 10]; // output => [0, 1, 8, 125, 1000]
+
+function map(arr) {
+  if (arr[0] === 10) return 1000;
+  console.log(arr);
+  const product = arr[0] * arr[0] * arr[0];
+  return [product, map(arr.slice(1))].flat();
+}
+// function map2(arr) {
+//   console.log(arr);
+
+//   const product = arr[0] * arr[0] * arr[0];
+//   map3(arr.slice(1));
+//   return product;
+// }
+// function map3(arr) {
+//   console.log(arr);
+
+//   const product = arr[0] * arr[0] * arr[0];
+//   map4(arr.slice(1));
+//   return product;
+// }
+// function map4(arr) {
+//   console.log(arr);
+
+//   const product = arr[0] * arr[0] * arr[0];
+//   map5(arr.slice(1));
+//   return product;
+// }
+// function map5(arr) {
+//   console.log(arr);
+
+//   const product = arr[0] * arr[0] * arr[0];
+//   return product;
+// }
+
+console.log(map(numbers));
