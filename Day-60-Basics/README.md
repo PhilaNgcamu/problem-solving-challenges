@@ -1,4 +1,4 @@
-# problem-solving-challenges - Day 59
+# problem-solving-challenges - Day 60
 
 1. How can we restate the problem, in your own words?
 
