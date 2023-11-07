@@ -37,7 +37,8 @@ function map(arr) {
   console.log(arr);
   const product = arr[0] * arr[0] * arr[0];
   map2(arr.slice(1));
-  return [product, map2(arr.slice(1))];
+  const result = [map2(arr.slice(1))];
+  return result;
 }
 function map2(arr) {
   console.log(arr);
@@ -67,4 +68,4 @@ function map5(arr) {
   return product;
 }
 
-map(numbers);
+console.log(map(numbers));
