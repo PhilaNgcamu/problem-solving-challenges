@@ -1,3 +1,7 @@
+# Problem Solving Challenges
+
+- Solved 1 problem this day.
+
 # Problem Solving: Day 62 - Udemy - JavaScript Algorithms and Data Structures Masterclass
 
 <h1>Stacks</h1>
