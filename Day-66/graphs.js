@@ -18,6 +18,14 @@ class Graph {
       this.adjacencyList[vertexTwo].push(vertexOne);
     }
   }
+  removeEdge(vertexOne, vertexTwo) {
+    this.adjacencyList[vertexOne] = this.adjacencyList[vertexOne].filter(
+      (vertex) => vertexOne !== vertex && vertex !== vertexTwo
+    );
+    this.adjacencyList[vertexTwo] = this.adjacencyList[vertexTwo].filter(
+      (vertex) => vertexOne !== vertex && vertex !== vertexTwo
+    );
+  }
 }
 
 const graph = new Graph();
@@ -25,6 +33,9 @@ graph.addVertex("Dallas");
 graph.addVertex("Tokyo");
 graph.addVertex("Aspen");
 
+graph.addEdge("Aspen", "Dallas");
 graph.addEdge("Tokyo", "Dallas");
+
+graph.removeEdge("Tokyo", "Dallas");
 
 console.log(graph);
