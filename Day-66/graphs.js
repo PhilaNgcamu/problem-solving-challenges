@@ -53,6 +53,6 @@ graph.addEdge("Hong Kong", "Dallas");
 graph.addEdge("Los Angeles", "Hong Kong");
 graph.addEdge("Los Angeles", "Dallas");
 
-graph.removeVertex("Aspen");
+graph.removeVertex("Hong Kong");
 
 console.log(graph);
