@@ -20,10 +20,10 @@ class Graph {
   }
   removeEdge(vertexOne, vertexTwo) {
     this.adjacencyList[vertexOne] = this.adjacencyList[vertexOne].filter(
-      (vertex) => vertexOne !== vertex && vertex !== vertexTwo
+      (vertex) => vertexOne !== vertex
     );
     this.adjacencyList[vertexTwo] = this.adjacencyList[vertexTwo].filter(
-      (vertex) => vertexOne !== vertex && vertex !== vertexTwo
+      (vertex) => vertexOne !== vertex
     );
   }
 }
