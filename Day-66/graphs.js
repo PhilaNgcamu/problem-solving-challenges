@@ -20,8 +20,9 @@ class Graph {
   }
   //Removing an edge
   removeEdge(vertexOne, vertexTwo) {
+    console.log(vertexTwo);
     this.adjacencyList[vertexOne] = this.adjacencyList[vertexOne].filter(
-      (vertex) => vertexOne !== vertex
+      (vertex) => vertexTwo !== vertex
     );
     this.adjacencyList[vertexTwo] = this.adjacencyList[vertexTwo].filter(
       (vertex) => vertexOne !== vertex
@@ -29,14 +30,12 @@ class Graph {
   }
   // Removing a vertex
   removeVertex(vertex) {
-    delete this.adjacencyList[vertex];
-    for (const existingVertex in this.adjacencyList) {
-      if (this.adjacencyList[existingVertex]) {
-        this.adjacencyList[existingVertex] = this.adjacencyList[
-          existingVertex
-        ].filter((vertex) => !vertex);
-      }
+    while (this.adjacencyList[vertex].length) {
+      const adjacentVertex = this.adjacencyList[vertex].pop();
+      console.log(adjacentVertex, vertex);
+      this.removeEdge(adjacentVertex, vertex);
     }
+    delete this.adjacencyList[vertex];
   }
 }
 
@@ -44,12 +43,16 @@ const graph = new Graph();
 graph.addVertex("Dallas");
 graph.addVertex("Tokyo");
 graph.addVertex("Aspen");
+graph.addVertex("Los Angeles");
+graph.addVertex("Hong Kong");
 
-graph.addEdge("Aspen", "Dallas");
-graph.addEdge("Tokyo", "Dallas");
+graph.addEdge("Dallas", "Tokyo");
+graph.addEdge("Dallas", "Aspen");
+graph.addEdge("Hong Kong", "Tokyo");
+graph.addEdge("Hong Kong", "Dallas");
+graph.addEdge("Los Angeles", "Hong Kong");
+graph.addEdge("Los Angeles", "Dallas");
 
-graph.removeEdge("Tokyo", "Dallas");
-
-graph.removeVertex("Dallas");
+graph.removeVertex("Aspen");
 
 console.log(graph);
