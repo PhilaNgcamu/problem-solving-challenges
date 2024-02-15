@@ -24,5 +24,5 @@ const person = new Person("Phila", 33);
 
 // person.name("Ngcamu");
 // console.log(person.name());
-person.name = true;
-console.log(person.name);
+
+console.log(person.displayInfo());
