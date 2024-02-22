@@ -1,1 +1,1 @@
-# Problem Solving: Day 69 - MDN Basics
+# Problem Solving: Day 70 - MDN Basics
