@@ -22,22 +22,27 @@ const items = ["soap", "tomato"];
 
 function cashier(arr) {
   arr.forEach((action, idx) => {
-    console.log(`Cashier: ${action}`);
-    if (action === "add items") {
-      items.push("eggs");
-    } else if (action === "void") {
-      console.log(arr.pop());
-      controller();
-    }
+    // console.log(`Cashier: ${action}`);
+    if (action === "hello") {
+      console.log("Cashier: hello");
+      console.log("Customer: hi");
+    } else controller(controllerArr, idx);
   });
 }
 
 function controller(arr, idx) {
+  if (arr[idx] === "add items") {
+    items.push("eggs");
+    console.log(`Cashier: Added eggs in the basket, ${items}`);
+  } else if (arr[idx] === "void") {
+    items.shift();
+    console.log(`Cashier: Remove soap. Now left with ${items}`);
+  }
   if (arr[idx] === "smartshopper") {
-    console.log("Swipe the discount card (shopper)");
+    console.log("Cashier: Swipes the discount card (shopper)");
   } else if (arr[idx] === "plastic") {
     console.log("Cashier: Do you need a plastic?");
-    console.log("Yes, please");
+    console.log("Customer: Yes, please");
   } else "have a nice day";
 }
 
