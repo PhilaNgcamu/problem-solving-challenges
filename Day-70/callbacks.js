@@ -25,24 +25,35 @@ function cashier(arr) {
     if (action === "hello") {
       console.log("Cashier: hello");
       console.log("Customer: hi");
+    } else if (action === "smartshopper") {
+      console.log("Cashier: Swipes the discount card (shopper)");
+    } else if (action === "plastic") {
+      console.log("Cashier: Do you need a plastic?");
+      console.log("Customer: Yes, please");
     } else controller(controllerArr, idx);
   });
 }
 
 const controller = (arr, idx) => {
-  if (arr[idx] === "add items") {
-    items.push("eggs");
-    console.log(`Cashier: Added eggs in the basket, ${items}`);
-  } else if (arr[idx] === "void") {
-    items.shift();
-    console.log(`Cashier: Remove soap. Now left with ${items}`);
+  switch (arr[idx]) {
+    case "add items":
+      items.push("eggs");
+      console.log(`Cashier: Added eggs in the basket, ${items}`);
+      break;
+    case "void":
+      items.shift();
+      console.log(`Cashier: Remove soap. Now left with ${items}`);
+      break;
+    case "smartshopper":
+      console.log("Cashier: Swipes the discount card (shopper)");
+      break;
+    case "plastic":
+      console.log("Cashier: Do you need a plastic?");
+      console.log("Customer: Yes, please");
+      break;
+    default:
+      console.log("have a nice day");
   }
-  if (arr[idx] === "smartshopper") {
-    console.log("Cashier: Swipes the discount card (shopper)");
-  } else if (arr[idx] === "plastic") {
-    console.log("Cashier: Do you need a plastic?");
-    console.log("Customer: Yes, please");
-  } else "have a nice day";
 };
 
 cashier(controllerArr);
