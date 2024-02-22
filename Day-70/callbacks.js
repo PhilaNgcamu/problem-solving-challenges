@@ -22,7 +22,6 @@ const items = ["soap", "tomato"];
 
 function cashier(arr) {
   arr.forEach((action, idx) => {
-    // console.log(`Cashier: ${action}`);
     if (action === "hello") {
       console.log("Cashier: hello");
       console.log("Customer: hi");
@@ -30,7 +29,7 @@ function cashier(arr) {
   });
 }
 
-function controller(arr, idx) {
+const controller = (arr, idx) => {
   if (arr[idx] === "add items") {
     items.push("eggs");
     console.log(`Cashier: Added eggs in the basket, ${items}`);
@@ -44,6 +43,6 @@ function controller(arr, idx) {
     console.log("Cashier: Do you need a plastic?");
     console.log("Customer: Yes, please");
   } else "have a nice day";
-}
+};
 
 cashier(controllerArr);
