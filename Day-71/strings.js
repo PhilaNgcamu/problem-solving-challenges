@@ -1,6 +1,6 @@
-const sentence = "philasande is a devout christian";
+const sentence = "philasane is a vout chrian";
 
-// Print name "dechristian" on a new string using .charAt(..)
+// Print name "dechristian" on a new string using .charAt(..) and return true if sentence contains "dechristian", else false
 
 function print(str, name) {
   let newStr = "";
@@ -9,7 +9,7 @@ function print(str, name) {
       newStr += name.charAt(i);
     }
   }
-  return newStr;
+  return newStr.length === name.length;
 }
 
 console.log(print(sentence, "dechristian"));
