@@ -7,7 +7,7 @@
 //Therefore, fn = fn-2 + fn-1
 
 function main() {
-  console.log(fibo(4));
+  console.log(fibo(7));
 }
 
 function fibo(num) {
