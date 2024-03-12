@@ -21,12 +21,12 @@ function fib(n) {
 //console.log(fib(4));
 
 //Example: countDown(10);
-// function countDown(n) {
-//   if (n === 1) console.log(n);
-//   else {
-//     console.log(n);
+function countDown(n) {
+  if (n === 1) console.log(n);
+  else {
+    console.log(n);
 
-//     return countDown(n - 1);
-//   }
-// }
-console.log(countDown(10));
+    return countDown(n - 1);
+  }
+}
+//console.log(countDown(10));
