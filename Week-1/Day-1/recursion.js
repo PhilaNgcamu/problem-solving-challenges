@@ -39,3 +39,11 @@ function sum(n) {
 }
 
 //console.log(sum(10));
+
+//Example: find the answer of given X raised to the power N using recursion. X = 5 and N = 3
+function power(x, n) {
+  if (n === 1) return x;
+  else return x * power(x, n - 1);
+}
+
+//console.log(power(2, 3));
