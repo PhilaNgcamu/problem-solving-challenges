@@ -20,13 +20,22 @@ function fib(n) {
 
 //console.log(fib(4));
 
-//Example: countDown(10);
-function countDown(n) {
+//Example: count down from 10 to 1: countDown(10);
+function countDownRecursive(n) {
   if (n === 1) console.log(n);
   else {
     console.log(n);
 
-    return countDown(n - 1);
+    return countDownRecursive(n - 1);
   }
 }
 //console.log(countDown(10));
+
+//Example: Sum of numbers
+
+function sum(n) {
+  if (n === 1) return 1;
+  else return n + sum(n - 1);
+}
+
+//console.log(sum(10));
