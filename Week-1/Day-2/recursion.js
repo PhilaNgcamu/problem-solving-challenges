@@ -8,9 +8,10 @@ function reverseString(str) {
 
 // Example: Palindrome recursively
 
-function isPalindrome(str) {
-  if (str.length === 1) return true;
-  else return str[0] === str[str.length - 1] && isPalindrome(str.slice(1, -1));
+function isPalindrome(str, start = 0, end = str.length - 1) {
+  if (start >= end) return true;
+  if (str[start] !== str[end]) return false;
+  return isPalindrome(str, start + 1, end - 1);
 }
 
 // console.log(isPalindrome("madam"));
