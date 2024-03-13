@@ -25,4 +25,4 @@ function sumOfDigits(num) {
   return (num % 10) + sumOfDigits(Math.floor(num / 10));
 }
 
-console.log(sumOfDigits(12345));
+// console.log(sumOfDigits(12345));
