@@ -1,7 +1,7 @@
 // Example: Reverse a string recursively
 function reverseString(str) {
-  if (str.length === 1) return str;
-  else return str[str.length - 1] + reverseString(str.slice(0, -1));
+  if (str.length <= 1) return str;
+  return reverseString(str.slice(1)) + str[0];
 }
 
 console.log(reverseString("hello"));
