@@ -26,3 +26,12 @@ function sumOfDigits(num) {
 }
 
 // console.log(sumOfDigits(12345));
+
+// Example: Find the sum of digits recursively
+// The Function should take in the array of digits
+
+function sumOfDigits(arr) {
+  if (arr.length === 0) return 0;
+  else return arr.pop() + sumOfDigits(arr);
+}
+console.log(sumOfDigits([1, 2, 3]));
