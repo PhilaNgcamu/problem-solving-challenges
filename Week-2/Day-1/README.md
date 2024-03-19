@@ -12,3 +12,9 @@
 <h2>Memoization</h2>
 
 - Storing the results of expensive function calls and returning the cached result when the same inputs occur again
+
+<h2>Tabulation</h2>
+
+- Storing the result of a previous result in a "table" (usually an array)
+- Usually done using **iteration**
+- Better **space complexity** can achieved using tabulation

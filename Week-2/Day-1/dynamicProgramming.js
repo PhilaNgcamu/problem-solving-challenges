@@ -1,6 +1,6 @@
+// Recursive solution
 function fib(n, memo) {
   if (memo[n]) return memo[n];
-  if (n <= 2) return 1;
   else {
     let res = fib(n - 1, memo) + fib(n - 2, memo);
     memo[n] = res;
@@ -8,4 +8,17 @@ function fib(n, memo) {
   }
 }
 
-console.log(fib(5, []));
+console.log(fib(1000, [undefined, 1, 1]));
+
+// Tabulation
+
+function fib(n) {
+  //Known value of fib(1) and fib(2)
+  let tab = [0, 1, 1];
+  for (let i = 3; i <= n; i++) {
+    tab[i] = tab[i - 1] + tab[i - 2];
+  }
+  return tab[n];
+}
+
+console.log(fib(5));
