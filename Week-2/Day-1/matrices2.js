@@ -23,4 +23,11 @@ function matrixAddition(A, B) {
 }
 
 console.log(matrixAddition(A, B));
-// []
+// Diagonal Matrix
+function diagonalSum(matrix) {
+  let result = 0;
+  for (let i = 0; i < matrix.length; i++) {
+    result += matrix[i][i];
+  }
+  return result;
+}
