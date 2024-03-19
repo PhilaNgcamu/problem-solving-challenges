@@ -14,6 +14,7 @@ console.log(fib(1000, [undefined, 1, 1]));
 
 function fib(n) {
   //Known value of fib(1) and fib(2)
+  //using an index to find the nth number
   let tab = [0, 1, 1];
   for (let i = 3; i <= n; i++) {
     tab[i] = tab[i - 1] + tab[i - 2];
@@ -21,4 +22,4 @@ function fib(n) {
   return tab[n];
 }
 
-console.log(fib(5));
+console.log(fib(1000));
