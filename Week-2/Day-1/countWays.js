@@ -4,9 +4,11 @@
 // We know that: there's 1 step to the 0th stair, 1 step to the 1st stair
 
 function countWays(n) {
-  let tab = [0, 1];
+  let nthSteps = [0, 1];
   for (let i = 2; i <= n; i++) {
-    tab[i] = tab[i - 2] + tab[i - 1];
+    nthSteps[i] = nthSteps[i - 2] + nthSteps[i - 1];
   }
-  return tab[i];
+  return nthSteps[i];
 }
+
+console.log(countWays(5));
