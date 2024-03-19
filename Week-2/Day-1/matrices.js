@@ -30,18 +30,33 @@ function matrixAddition(A, B) {
 console.log(matrixAddition(A, B));
 
 function matrixMultiplication(A, B) {
-  const rows = A.length;
-  const cols = A[0].length;
+  const rowsA = A.length;
+  const colsA = A[0].length;
+  const colsB = B[0].length;
 
   // Create a new matrix to store the result
   const result = [];
 
-  for (let i = 0; i < rows; i++) {
+  // Iterate through each row of matrix A
+  for (let i = 0; i < rowsA; i++) {
     result[i] = [];
-    for (let j = 0; j < cols; j++) {
-      result[i][j] = A[i][j] * B[i][j];
+    // Iterate through each column of matrix B
+    for (let j = 0; j < colsB; j++) {
+      let sum = 0;
+      // Iterate through each element of row i of matrix A and column j of matrix B
+      for (let k = 0; k < colsA; k++) {
+        sum += A[i][k] * B[k][j];
+      }
+      // 9 + 12 + 9 = 30
+      // (1 * 8) + (2 * 5) + (3 * 2) = 24
+      // (1 * 7) + (2 * 4) + (3 * 1) = 18
+      result[i][j] = sum;
     }
   }
+
   return result;
 }
+
+// Test matrix multiplication
+console.log("\nMatrix Multiplication:");
 console.log(matrixMultiplication(A, B));
