@@ -18,3 +18,7 @@
 - Storing the result of a previous result in a "table" (usually an array)
 - Usually done using **iteration**
 - Better **space complexity** can achieved using tabulation
+
+# Matrices (Matrix)
+
+- Matrices are fundamental mathematical objects that represent a collection of numbers arranged in rows and columns
