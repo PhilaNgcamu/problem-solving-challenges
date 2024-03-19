@@ -31,3 +31,7 @@ function diagonalSum(matrix) {
   }
   return result;
 }
+
+function diagonalSum(matrix) {
+  return matrix.reduce((sum, arr, i) => sum + arr[i], 0);
+}
