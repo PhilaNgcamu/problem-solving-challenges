@@ -8,7 +8,7 @@ function countWays(n) {
   for (let i = 2; i <= n; i++) {
     nthSteps[i] = nthSteps[i - 2] + nthSteps[i - 1];
   }
-  return nthSteps[i];
+  return nthSteps[n];
 }
 
 console.log(countWays(5));
