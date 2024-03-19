@@ -22,6 +22,17 @@ function binarySearch(arr, elem) {
   }
   return arr[middle] === elem ? middle : -1;
 }
-console.log(binarySearch([2, 5, 6, 9, 13, 15, 28, 30], 278));
+function binarySearch(arr, elem, start = 0, end = arr.length - 1) {
+  const middle = Math.floor((start + end) / 2);
+  if (arr[middle] === elem) return middle;
+  if (start > end) return -1;
+  if (elem < arr[middle]) {
+    return binarySearch(arr, elem, start, middle - 1);
+  } else {
+    return binarySearch(arr, elem, middle + 1, end);
+  }
+}
+console.log(binarySearch([2, 5, 6, 9, 13, 15, 28, 30], 5));
+console.log(binarySearch([2, 5, 6, 9, 13, 15, 28, 30], 5));
 //[2, 5, 6, 9, 13, 15, 28]
 // S        M           E
