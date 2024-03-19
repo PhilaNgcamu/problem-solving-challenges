@@ -35,3 +35,7 @@ function diagonalSum(matrix) {
 function diagonalSum(matrix) {
   return matrix.reduce((sum, arr, i) => sum + arr[i], 0);
 }
+
+function mainDiagonalProduct(mat) {
+  return mat.reduce((product, arr, i) => product * arr[i], 1);
+}
