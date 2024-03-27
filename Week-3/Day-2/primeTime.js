@@ -3,11 +3,18 @@
 // Prime Numbers are numbers that can only be divided by 1 and themselves.
 function PrimeTime(num) {
   for (let i = 1; i < Math.pow(2, 16); i++) {
-    if (num === i) continue;
+    if (num === i || i === 1) continue;
     if (num === 1) return true;
     if (num % i === 0) {
       return false;
     }
-    return false;
   }
+  return true;
 }
+
+console.log(PrimeTime(19));
+console.log(PrimeTime(2));
+console.log(PrimeTime(3));
+console.log(PrimeTime(4));
+console.log(PrimeTime(5));
+console.log(PrimeTime(4321));
