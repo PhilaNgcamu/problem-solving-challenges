@@ -1,3 +1,3 @@
 # Classes and objects
 
-- Solved 4 problems on Codewars
+- Solved 5 problems on Codewars
